@@ -1,0 +1,39 @@
+.navbar {
+    position: fixed;
+    width: 10%;
+    background-color: rgb(16, 16, 26);
+    height: 100%;
+    padding-top: 5%;
+    border-right: 1px solid gray;
+
+    .navbarContentDiv {
+        cursor: pointer;
+        text-align: center;
+        border-bottom: 1px solid lightgray;
+        padding: 20px 0;
+        color: gray;
+
+        .navbarContent {
+            margin-top: 0px;
+            font-size: 3vh;
+        }
+
+        &:hover {
+            .navbarImg {
+                fill: rgb(53, 106, 204);
+            }
+            .navbarContent {
+                color: rgb(53, 106, 204);
+            }
+        }
+
+    }
+
+}
+
+@media only screen and (max-width: 769px) {
+    /* Mobile and tablet */
+    .navbar {
+        display: none;
+    }
+  }
