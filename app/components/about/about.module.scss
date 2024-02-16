@@ -1,0 +1,57 @@
+.aboutContainer {
+    height: 100vh;
+    background-image: url('../../../images/aboutBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+
+    .aboutHeader {
+        color: gray;
+        font-size: 4vw;
+        display: inline;
+        cursor: pointer;
+    }
+
+    .aboutContentDiv {
+        margin-top: 60px;
+
+        .aboutContent {
+            margin-top: 30px;
+            color: black;
+            width: 50%;
+            font-size: 1vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /* Laptop and desktop */
+    .header {
+        width: 90vw;
+
+        .aboutHeader:hover {
+            color: rgb(53, 106, 204);
+        }
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* Mobile and tablet */
+    .aboutContainer {
+        height: fit-content;
+        .aboutHeader {
+            font-size: 10vw;
+        }
+        .aboutContentDiv {
+            margin: 0;
+            .aboutContent {
+                font-size: 4vw;
+                width: 100%;
+            }
+        }
+    }
+
+}

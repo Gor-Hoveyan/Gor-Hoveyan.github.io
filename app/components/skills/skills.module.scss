@@ -1,0 +1,49 @@
+.skillsContainer {
+
+    height: 100vh;
+    background-image: url('../../../images/skillsBg.jpg');
+    background-size: cover;
+    padding: 5% 10%;
+
+    .skillsHeader {
+        display: inline;
+        cursor: pointer;
+        font-size: 4vw;
+        color: gray;
+    }
+
+    .skillsList {
+        margin-top: 40px;
+        width: 50%;
+        font-size: 1vw;
+        color: black;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+
+    /* Laptop and desktop */
+    .skillsContainer {
+        width: 90vw;
+        float: right;
+        .skillsHeaderhover {
+            color: rgb(53, 106, 204);
+        }
+
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    /* Mobile and tablet */
+    .skillsContainer {
+        height: fit-content;
+        padding: 15%;
+        .skillsHeader {
+            font-size: 10vw;
+        }
+        .skillsList {
+            font-size: 3.2vw;
+            width: 100%;
+        }
+    }
+}

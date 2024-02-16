@@ -1,0 +1,24 @@
+.headerContainer {
+    height: 12vw;
+    width: 100vw;
+    background-color: rgb(16, 16, 26);
+    position: fixed;
+    padding: 5%;
+    .linkList {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-evenly;
+        list-style: none;
+        align-items: center;
+        font-size: 4vw;
+        
+    }
+}
+
+@media only screen and (min-width: 780px) {
+    /* Laptop and desktop and horizontal tablet */
+    .headerContainer {
+        display: none;
+    }
+  }
