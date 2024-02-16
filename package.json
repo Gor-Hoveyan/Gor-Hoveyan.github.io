@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npm run build && gh-pages -d src -b gh-pages -t true"
+    "deploy": "npm run build && gh-pages -d out -b gh-pages -t true"
   },
   "dependencies": {
     "next": "^14.1.0",
