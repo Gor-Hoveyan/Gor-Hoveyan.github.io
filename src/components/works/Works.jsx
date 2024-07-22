@@ -21,8 +21,8 @@ export default function Works() {
                     <h3>View project</h3>
                     <RiExternalLinkFill color='#6E07F3' size={'2rem'} />
                 </a>
-                <img className={styles.cryptoListImg} src='https://i.yapx.cc/XwaAN.png' alt='crypto list' />
-                <img className={styles.cryptoListImg} src='https://i.yapx.cc/XwaNL.png' alt='crypto list' />
+                <img style={{borderTopRightRadius: '3%', borderTopLeftRadius: '3%'}} className={styles.cryptoListImg} src='https://i.yapx.cc/XwaAN.png' alt='crypto list' />
+                <img style={{borderBottomRightRadius: '3%', borderBottomLeftRadius: '3%'}} className={styles.cryptoListImg} src='https://i.yapx.cc/XwaNL.png' alt='crypto list' />
 
             </div>
             <div className={styles.testPlatform}>
@@ -43,8 +43,8 @@ export default function Works() {
                     <RiExternalLinkFill color='#6E07F3' size={'2rem'} />
                 </a>
 
-                <img className={styles.quizPlatformImg} src='https://i.yapx.ru/Xwaic.png' alt='Quiz platform' />
-                <img className={styles.quizPlatformImg} src='https://i.yapx.ru/XwajZ.png' alt='Quiz platform' />
+                <img style={{borderTopRightRadius: '3%', borderTopLeftRadius: '3%'}} className={styles.quizPlatformImg} src='https://i.yapx.ru/Xwaic.png' alt='Quiz platform' />
+                <img  className={styles.quizPlatformImg} src='https://i.yapx.ru/XwajZ.png' alt='Quiz platform' />
 
 
             </div>

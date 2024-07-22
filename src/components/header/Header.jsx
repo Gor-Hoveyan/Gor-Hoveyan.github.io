@@ -6,7 +6,7 @@ export default function Header() {
     return (
         <div className={styles.header}>
             <Link to='home' smooth duration={500} className={styles.link}>
-                <img alt='logo' className={styles.logo} src='https://i.yapx.ru/XwQBS.png' />
+                <img alt='logo' className={styles.logo} src='https://i.yapx.ru/Xwa5n.jpg' />
             </Link>
             <Link to='home' className={styles.link} smooth duration={500} activeClass={styles.active} spy>
                 Home
