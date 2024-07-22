@@ -1,0 +1,79 @@
+@import url('https://fonts.cdnfonts.com/css/public-pixel');
+
+.main {
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15%;
+    margin-bottom: 0;
+
+    span {
+        font-weight: bolder;
+        color: #6E07F3;
+    }
+
+    .contentDiv {
+        animation: autoScroll 0.8s linear;
+    }
+
+    .homeHeader {
+        transition: transform 0.3s;
+        width: fit-content;
+        margin: 120px auto 0px auto;
+        cursor: pointer;
+        transform: translateY(0deg);
+    }
+
+    .avatar {
+        margin: 50px 0;
+        transition: transform 0.3s;
+        border-radius: 50%;
+        cursor: pointer;
+        animation: avatarAnimation 3s linear;
+
+        &:hover {
+            animation: avatarAnimation 4s linear infinite;
+        }
+    }
+
+    .content {
+        color: rgb(59, 59, 59);
+        font-weight: 500;
+        margin-top: 10px;
+    }
+
+    .background {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        margin-bottom: -0.4rem;
+    }
+}
+
+@keyframes autoScroll {
+    0% {
+        transform: translateY(100vh);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes avatarAnimation {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg);
+    }
+}
+
+@media (min-width: 800px) {
+    .homeHeader {
+        &:hover {
+            color: #6E07F3;
+            transform: scale(1.1);
+        }
+    }
+}

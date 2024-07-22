@@ -1,0 +1,93 @@
+.main {
+    text-align: center;
+    padding: 50px 5%;
+
+    .content {
+        width: 100%;
+        display: flex;
+        margin: 50px auto;
+        justify-content: space-around;
+
+        .text {
+            width: 50%;
+        }
+    }
+
+    .flex,
+    .flexLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flexLink {
+        margin: 15px auto;
+        width: fit-content;
+        text-decoration: none;
+        color: black;
+    }
+
+    .cryptoList {
+        .cryptoListHeader {
+            width: fit-content;
+        }
+    }
+
+    .link {
+        text-decoration: none;
+        color: #6E07F3;
+        font-weight: bolder;
+    }
+
+    .quizPlatform {
+        margin: 100px auto;
+    }
+}
+
+@media (max-width: 900px) {
+    .cryptoListImg {
+        max-width: 100%;
+    }
+    .quizPlatformImg {
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 800px) {
+    .cryptoListImg {
+        max-width: 60%;
+    }
+    .quizPlatformImg {
+        max-width: 60%;
+    }
+
+    .flexLink {
+        &:hover {
+            text-decoration: underline;
+            color: #6E07F3;
+
+        }
+    }
+
+    .link {
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .cryptoListHeader {
+        cursor: pointer;
+        &:hover {
+            color: #6E07F3;
+        }
+    }
+
+    .worksHeader {
+        transition-duration: 0.3s;
+
+        &:hover {
+            color: #6E07F3;
+            transform: scale(1.2);
+        }
+    }
+}

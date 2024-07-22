@@ -1,0 +1,15 @@
+.about {
+    background-color: #6E07F3;
+    padding: 50px 5%;
+    margin: 0;
+    color: white;
+    text-align: center;
+    .content {
+        margin: 15px 0;
+        font-size: 1.1rem;
+        transition: 0.4s;
+        transform: translateY(100);
+        text-wrap: wrap;
+        line-height: 1.5;
+    }
+}
