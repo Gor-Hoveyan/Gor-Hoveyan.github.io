@@ -1,15 +1,115 @@
 .about {
     background-color: #6E07F3;
-    padding: 50px 5%;
+    padding: 75px 5% 50px 5%;
     margin: 0;
     color: white;
     text-align: center;
+
     .content {
-        margin: 15px 0;
+        max-width: 800px;
+        margin: 40px auto 0 auto;
         font-size: 1.1rem;
         transition: 0.4s;
         transform: translateY(100);
         text-wrap: wrap;
         line-height: 1.5;
+        font-family: sans-serif;
+    }
+
+    .skills {
+        margin-top: 25px;
+        text-align: center;
+
+        .skillsSection {
+            justify-content: center;
+            display: grid;
+            margin: 25px auto 0 auto;
+
+            span {
+                padding: 10px 15px;
+                background-color: #5BE9B9;
+                color: black;
+                border-radius: 5px;
+                margin: 5px 5px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .header {
+        transition: 0.4s;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+
+    .skills {
+        .skillsSection {
+            grid-template-columns: 10% 10% 10%;
+
+            span {
+                transition: 0.6s;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) and (max-width: 1200px) {
+    .skills {
+        .skillsSection {
+            grid-template-columns: 15% 15% 15%;
+
+            span {
+                transition: 0.6s;
+                cursor: pointer;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .skills {
+
+        .skillsSection {
+            grid-template-columns: 30% 30% 30%;
+        }
+    }
+
+    .content,
+    .header,
+    .skillsSection {
+        animation: onScroll linear;
+        animation-timeline: view();
+    }
+
+    .content {
+        animation-range: 0 10%;
+    }
+
+    .header {
+        animation-range: 0 15%;
+    }
+
+    .skillsSection {
+        animation-range: 0 15%;
+    }
+}
+
+@keyframes onScroll {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50px) scale(0.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }

@@ -3,7 +3,7 @@
 .main {
     margin: 0 auto;
     text-align: center;
-    padding: 0 15%;
+    padding: 120px 15% 0 15%;
     margin-bottom: 0;
 
     span {
@@ -11,14 +11,10 @@
         color: #6E07F3;
     }
 
-    .contentDiv {
-        animation: autoScroll 0.8s linear;
-    }
-
     .homeHeader {
         transition: transform 0.3s;
         width: fit-content;
-        margin: 120px auto 0px auto;
+        margin: 0 auto 0px auto;
         cursor: pointer;
         transform: translateY(0deg);
     }
@@ -50,12 +46,13 @@
 }
 
 @keyframes autoScroll {
-    0% {
-        transform: translateY(100vh);
+    from {
+        opacity: 0;
+        transform: translateY(200px) scale(0.5);
     }
-
-    100% {
-        transform: translateY(0);
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
 
@@ -75,5 +72,11 @@
             color: #6E07F3;
             transform: scale(1.1);
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .contentDiv {
+        animation: autoScroll 0.8s linear;
     }
 }

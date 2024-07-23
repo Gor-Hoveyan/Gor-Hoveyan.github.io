@@ -5,11 +5,13 @@
     .content {
         width: 100%;
         display: flex;
+        flex-direction: column;
         margin: 50px auto;
         justify-content: space-around;
+        align-items: center;
 
         .text {
-            width: 50%;
+            margin-top: 25px;
         }
     }
 
@@ -20,6 +22,7 @@
         justify-content: center;
     }
 
+
     .flexLink {
         margin: 15px auto;
         width: fit-content;
@@ -27,11 +30,11 @@
         color: black;
     }
 
-    .cryptoList {
-        .cryptoListHeader {
-            width: fit-content;
-        }
+    .cryptoListHeader {
+        width: fit-content;
+        margin-left: 15px;
     }
+
 
     .link {
         text-decoration: none;
@@ -48,6 +51,13 @@
     .cryptoListImg {
         max-width: 100%;
     }
+
+    .content, .worksHeader {
+        animation: onScroll linear;
+        animation-timeline: view();
+        animation-range: 0 15%;
+    }
+
     .quizPlatformImg {
         max-width: 100%;
     }
@@ -57,6 +67,7 @@
     .cryptoListImg {
         max-width: 60%;
     }
+
     .quizPlatformImg {
         max-width: 60%;
     }
@@ -65,7 +76,6 @@
         &:hover {
             text-decoration: underline;
             color: #6E07F3;
-
         }
     }
 
@@ -77,6 +87,7 @@
 
     .cryptoListHeader {
         cursor: pointer;
+
         &:hover {
             color: #6E07F3;
         }
@@ -89,5 +100,18 @@
             color: #6E07F3;
             transform: scale(1.2);
         }
+    }
+}
+
+@keyframes onScroll {
+    from {
+        visibility: hidden;
+        opacity: 0;
+        transform: translateY(50px) scale(0.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
     }
 }
