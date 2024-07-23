@@ -1,4 +1,4 @@
-<h1>Gor Hoveyan's Portfolio</h1>
+<h1>Personal Portfolio</h1>
 <p>Welcome to my portfolio website. Here, you can learn more about my background, explore my projects, and get in touch with me.</p>
 
 <h2>Features</h2>
