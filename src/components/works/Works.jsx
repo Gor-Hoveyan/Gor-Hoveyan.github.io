@@ -15,7 +15,7 @@ export default function Works() {
                         <h2 className={styles.cryptoListHeader}>Crypto List</h2>
                     </div>
                     <p className={styles.text}>Crypto List App is a cryptocurrency tracker that displays the latest information about cryptocurrencies using dynamic data from the <a className={styles.link} href='https://coincap.io/'>CoinCap API</a>.</p>
-                    <a target='_blank' rel="noreferrer" className={`${styles.flexLink}`} href='https://crypto-list-fawn.vercel.app/coin/bitcoin'>
+                    <a target='_blank' rel="noreferrer" className={`${styles.flexLink}`} href='https://crypto-list-fawn.vercel.app'>
                         <h3 className={styles.projectLink}>View project</h3>
                         <RiExternalLinkFill color='#6E07F3' size={'2rem'} />
                     </a>
