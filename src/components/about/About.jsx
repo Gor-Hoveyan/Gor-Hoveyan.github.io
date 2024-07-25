@@ -24,8 +24,6 @@ export default function About() {
                         <span>Node JS</span>
                         <span>Express</span>
                         <span>MongoDB</span>
-
-
                 </div>
 
             </div>

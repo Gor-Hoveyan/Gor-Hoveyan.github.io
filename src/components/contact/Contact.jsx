@@ -9,7 +9,7 @@ export default function Contact() {
     const date = new Date();
     return (
         <div className={styles.main}>
-            <p className={styles.content}>Live. Explore. Create.</p>
+            <p className={styles.content}>Live. Create. Explore.</p>
             <div>
                 <a className={styles.link} target='_blank' rel='noreferrer' href='https://www.linkedin.com/in/gorhoveyan/'>
                     <CiLinkedin onMouseOver={(e) => e.currentTarget.style.scale = '1.2'}

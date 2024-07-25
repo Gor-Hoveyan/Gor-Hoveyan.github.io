@@ -12,11 +12,11 @@ export default function Works() {
                 <div className={styles.content}>
                     <div className={styles.flex}>
                         <FaBitcoin color='#6E07F3' size={'2rem'} />
-                        <h2 className={styles.cryptoListHeader}>Coin Tracker</h2>
+                        <h2 className={styles.cryptoListHeader}>Crypto List</h2>
                     </div>
-                    <p className={styles.text}>Coin Tracker app is Cryptocurrency Tracker That uses the dynamic data from <a className={styles.link} href='https://coincap.io/'>CoinCap API</a> to show changes of rates of Different Crypto Currencies.</p>
+                    <p className={styles.text}>Crypto List App is a cryptocurrency tracker that displays the latest information about cryptocurrencies using dynamic data from the <a className={styles.link} href='https://coincap.io/'>CoinCap API</a>.</p>
                     <a target='_blank' rel="noreferrer" className={`${styles.flexLink}`} href='https://crypto-list-fawn.vercel.app/coin/bitcoin'>
-                        <h3>View project</h3>
+                        <h3 className={styles.projectLink}>View project</h3>
                         <RiExternalLinkFill color='#6E07F3' size={'2rem'} />
                     </a>
                 </div>
@@ -38,7 +38,7 @@ export default function Works() {
                     <p className={styles.text}>The Quiz Platform designed for users to craft their own quizzes, participate in quizzes created by others, and leave ratings and comments.</p>
 
                     <a target='_blank' rel="noreferrer" className={`${styles.flexLink}`} href='https://github.com/Gor-Hoveyan/reactQuizPlatfrom'>
-                        <h3 className=''>View on github</h3>
+                        <h3  className={styles.projectLink}>View on github</h3>
                         <RiExternalLinkFill color='#6E07F3' size={'2rem'} />
                     </a>
                 </div>
