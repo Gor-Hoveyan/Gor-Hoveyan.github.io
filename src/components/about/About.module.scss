@@ -84,36 +84,4 @@
             grid-template-columns: 30% 30% 30%;
         }
     }
-
-    .content,
-    .header,
-    .skillsSection {
-        animation: onScroll linear;
-        animation-timeline: view();
-    }
-
-    .content {
-        animation-range: 0 10%;
-    }
-
-    .header {
-        animation-range: 0 15%;
-    }
-
-    .skillsSection {
-        animation-range: 0 15%;
-    }
-}
-
-@keyframes onScroll {
-    from {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(50px) scale(0.2);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
-    }
 }

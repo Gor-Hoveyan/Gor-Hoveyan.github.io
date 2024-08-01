@@ -56,12 +56,6 @@
         max-width: 100%;
     }
 
-    .content, .worksHeader {
-        animation: onScroll linear;
-        animation-timeline: view();
-        animation-range: 0 15%;
-    }
-
     .quizPlatformImg {
         max-width: 100%;
     }
@@ -104,18 +98,5 @@
             color: #6E07F3;
             transform: scale(1.2);
         }
-    }
-}
-
-@keyframes onScroll {
-    from {
-        visibility: hidden;
-        opacity: 0;
-        transform: translateY(50px) scale(0.2);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0) scale(1);
     }
 }
