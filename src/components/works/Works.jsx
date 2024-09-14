@@ -77,7 +77,7 @@ export default function Works() {
         <img
           style={{ borderTopRightRadius: "3%", borderTopLeftRadius: "3%" }}
           className={styles.quizPlatformImg}
-          src="https://i.yapx.cc/X8U71.png"
+          src="https://i.yapx.cc/X8U8B.png"
           alt="Quiz platform"
         />
       </div>
