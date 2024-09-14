@@ -45,7 +45,7 @@ export default function Works() {
             borderBottomLeftRadius: "3%",
           }}
           className={styles.cryptoListImg}
-          src="https://i.yapx.cc/X8U5Y.png"
+          src="https://i.yapx.cc/X8U8B.png"
           alt="crypto list"
         />
       </div>
