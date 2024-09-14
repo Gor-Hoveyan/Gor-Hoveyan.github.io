@@ -10,8 +10,12 @@ export default function About() {
       <pre className={styles.content}>
         I am a success-oriented web developer from Armenia. I enjoy creating
         efficient and user-friendly full-stack applications using{" "}
-        <strong>React/Next</strong> for front-end and <strong>Node JS</strong>{" "}
-        for back-end.
+        <strong style={{ color: "#5BE9B9" }}>React/Next.js</strong> for
+        front-end and <strong style={{ color: "#5BE9B9" }}>Node.js</strong> for
+        back-end.
+        <br />
+        I'm always up for a new challenge, excited to tackle complex problems
+        and continue expanding my skills in web development.
       </pre>
       <div className={styles.skills}>
         <h1 className={styles.header}>Skills</h1>
@@ -25,8 +29,8 @@ export default function About() {
           <span>React</span>
           <span>Redux</span>
           <span>Zustand</span>
-          <span>Next JS</span>
-          <span>Node JS</span>
+          <span>Next.js</span>
+          <span>Node.js</span>
           <span>Express</span>
           <span>Rest API</span>
           <span>MongoDB</span>
