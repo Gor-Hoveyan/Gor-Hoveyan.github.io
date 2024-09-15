@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Contact.module.scss";
-import { CiLinkedin } from "react-icons/ci";
-import { FaTelegram, FaGithub } from "react-icons/fa";
+import { ImLinkedin } from "react-icons/im";
+import { FaTelegram, FaGithub } from "react-icons/fa6";
 import { ImMail4 } from "react-icons/im";
 
 export default function Contact() {
@@ -16,10 +16,14 @@ export default function Contact() {
           rel="noreferrer"
           href="https://www.linkedin.com/in/gorhoveyan/"
         >
-          <CiLinkedin
+          <ImLinkedin
             onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
             onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
-            style={{ transitionDuration: "0.4s" }}
+            style={{
+              transitionDuration: "0.4s",
+              boxShadow: "4px 4px 10px rgba(0, 0, 0, 0.6)",
+              borderRadius: "100%",
+            }}
             color="white"
             size={"2.5rem"}
           />
@@ -33,7 +37,11 @@ export default function Contact() {
           <FaTelegram
             onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
             onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
-            style={{ transitionDuration: "0.4s" }}
+            style={{
+              transitionDuration: "0.4s",
+              boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.6)",
+              borderRadius: "50%",
+            }}
             color="white"
             size={"2.5rem"}
           />
@@ -47,7 +55,11 @@ export default function Contact() {
           <FaGithub
             onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
             onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
-            style={{ transitionDuration: "0.4s" }}
+            style={{
+              transitionDuration: "0.4s",
+              boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.6)",
+              borderRadius: "50%",
+            }}
             color="white"
             size={"2.5rem"}
           />
@@ -61,7 +73,11 @@ export default function Contact() {
           <ImMail4
             onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
             onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
-            style={{ transitionDuration: "0.4s" }}
+            style={{
+              transitionDuration: "0.4s",
+              boxShadow: "4px 4px 15px rgba(0, 0, 0, 0.6)",
+              borderRadius: "50%",
+            }}
             color="white"
             size={"2.5rem"}
           />

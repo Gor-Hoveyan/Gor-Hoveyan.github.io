@@ -29,7 +29,7 @@
     cursor: pointer;
     animation: avatarAnimation 3s linear;
     border-radius: 50%;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6);
 
     &:hover {
       animation: avatarAnimation 4s linear infinite;
@@ -72,6 +72,12 @@
     padding: 0;
     margin-bottom: 0;
     margin-bottom: -0.4rem;
+  }
+  span {
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
   }
 }
 @media (min-width: 1200px) {
