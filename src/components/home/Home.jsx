@@ -15,7 +15,7 @@ export default function Home() {
       <img
         className={styles.avatar}
         alt="avatar"
-        src="https://i.yapx.ru/XwPU0.jpg"
+        src="https://i.yapx.cc/X8wXw.png"
       />
       <img
         className={styles.background}
