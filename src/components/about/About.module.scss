@@ -75,6 +75,7 @@
         cursor: pointer;
         &:hover {
           background-color: #94c6f0;
+          text-decoration: none;
         }
       }
     }
@@ -88,7 +89,7 @@
     .skillsSection {
       grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
       span {
-        padding: 5px 0px;
+        padding: 5px 100px;
       }
     }
   }
