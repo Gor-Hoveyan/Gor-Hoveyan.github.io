@@ -57,7 +57,8 @@
         transition: 0.6s;
         cursor: pointer;
         &:hover {
-          background-color: #67a7db;
+          background-color: #67d3db;
+          text-decoration: none;
         }
       }
     }
@@ -82,8 +83,13 @@
 
 @media (max-width: 800px) {
   .skills {
+    font-size: 14px;
+    font-weight: 450;
     .skillsSection {
-      grid-template-columns: 30% 30% 30%;
+      grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+      span {
+        padding: 5px 0px;
+      }
     }
   }
 }
