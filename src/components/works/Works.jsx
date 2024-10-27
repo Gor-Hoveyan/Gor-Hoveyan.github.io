@@ -7,7 +7,7 @@ import { MdQuiz } from "react-icons/md";
 export default function Works() {
   return (
     <section className={styles.main}>
-      <h1 className={styles.worksHeader}>My Recent works</h1>
+      <h1 className={styles.worksHeader}>My Recent Works</h1>
       <div className={styles.line}></div>
       <section className={styles.quizPlatform}>
         <section className={styles.content}>
