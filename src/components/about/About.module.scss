@@ -5,6 +5,10 @@
   color: white;
   text-align: center;
 
+  .header {
+    font-size: 2.2rem;
+  }
+
   .content {
     max-width: 800px;
     margin: 40px auto 0 auto;
@@ -20,6 +24,7 @@
   .skills {
     margin-top: 25px;
     text-align: center;
+    font-weight: 450;
 
     .skillsSection {
       justify-content: center;
@@ -40,15 +45,6 @@
 }
 
 @media (min-width: 1200px) {
-  .header {
-    transition: 0.4s;
-    cursor: pointer;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-  }
-
   .skills {
     .skillsSection {
       grid-template-columns: 10% 10% 10%;
@@ -85,7 +81,6 @@
 @media (max-width: 800px) {
   .skills {
     font-size: 14px;
-    font-weight: 450;
     .skillsSection {
       grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
       span {

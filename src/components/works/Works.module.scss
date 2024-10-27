@@ -4,6 +4,7 @@
 
   .worksHeader {
     padding-bottom: 50px;
+    font-size: 2.2rem;
   }
 
   .line {
@@ -50,7 +51,8 @@
   }
 
   .quizPlatform,
-  .cryptoList {
+  .cryptoList,
+  .minesweeper {
     width: fit-content;
     margin: 0 auto;
     padding: 50px 0 100px 0;
@@ -59,6 +61,11 @@
   .quizPlatformImg {
     border-radius: 5%;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  .minesweeperImg {
+    border-radius: 5%;
+    margin: 0 auto;
   }
 
   .projectLink {
@@ -71,7 +78,8 @@
     max-width: 100%;
   }
 
-  .quizPlatformImg {
+  .quizPlatformImg,
+  .minesweeperImg {
     max-width: 100%;
   }
 
@@ -89,7 +97,8 @@
     width: 75%;
   }
 
-  .quizPlatformImg {
+  .quizPlatformImg,
+  .minesweeperImg {
     max-width: 60%;
   }
 
@@ -103,23 +112,6 @@
   .link {
     &:hover {
       text-decoration: underline;
-    }
-  }
-
-  .cryptoListHeader {
-    cursor: pointer;
-
-    &:hover {
-      color: #6e07f3;
-    }
-  }
-
-  .worksHeader {
-    transition-duration: 0.3s;
-    cursor: pointer;
-    &:hover {
-      color: #6e07f3;
-      transform: scale(1.2);
     }
   }
 }

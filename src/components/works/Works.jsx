@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Works.module.scss";
-import { FaBitcoin } from "react-icons/fa";
+import { FaBitcoin, FaBomb } from "react-icons/fa";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { MdQuiz } from "react-icons/md";
 
@@ -10,7 +10,7 @@ export default function Works() {
       <h1 className={styles.worksHeader}>My Recent works</h1>
       <div className={styles.line}></div>
       <section className={styles.quizPlatform}>
-        <div className={styles.content}>
+        <section className={styles.content}>
           <div className={styles.flex}>
             <MdQuiz color="#6E07F3" size={"2rem"} />
             <h2 className={styles.cryptoListHeader}>Quiz Platform</h2>
@@ -30,7 +30,7 @@ export default function Works() {
             <h3 className={styles.projectLink}>View on github</h3>
             <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
           </a>
-        </div>
+        </section>
 
         <img
           className={styles.quizPlatformImg}
@@ -39,8 +39,37 @@ export default function Works() {
         />
       </section>
       <div className={styles.line}></div>
+      <section className={styles.minesweeper}>
+        <section className={styles.content}>
+          <div className={styles.flex}>
+            <FaBomb color="#6E07F3" size={"2rem"} />
+            <h2 className={styles.cryptoListHeader}>Minesweeper</h2>
+          </div>
+          <p className={styles.text}>
+            Minesweeper is a logic-based puzzle game where players uncover
+            squares on a grid to avoid hidden mines while deducing their
+            locations based on numerical hints.
+          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.flexLink}`}
+            href="https://minesweeper-nine-tau.vercel.app/"
+          >
+            <h3 className={styles.projectLink}>Play now</h3>
+            <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
+          </a>
+        </section>
+
+        <img
+          className={styles.minesweeperImg}
+          src="https://i.yapx.cc/YGzrR.png"
+          alt="Minesweeper"
+        />
+      </section>
+      <div className={styles.line}></div>
       <section className={styles.cryptoList}>
-        <div className={styles.content}>
+        <section className={styles.content}>
           <div className={styles.flex}>
             <FaBitcoin color="#6E07F3" size={"2rem"} />
             <h2 className={styles.cryptoListHeader}>Crypto List</h2>
@@ -62,7 +91,7 @@ export default function Works() {
             <h3 className={styles.projectLink}>View project</h3>
             <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
           </a>
-        </div>
+        </section>
 
         <img
           style={{ borderTopRightRadius: "3%", borderTopLeftRadius: "3%" }}
@@ -70,6 +99,7 @@ export default function Works() {
           src="https://i.yapx.cc/X8U5e.png"
           alt="crypto list"
         />
+        <br />
         <img
           style={{
             borderBottomRightRadius: "3%",
@@ -80,7 +110,6 @@ export default function Works() {
           alt="crypto list"
         />
       </section>
-      <div className={styles.line}></div>
     </section>
   );
 }

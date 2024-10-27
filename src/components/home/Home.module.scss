@@ -18,9 +18,8 @@
   .homeHeader {
     transition: transform 0.3s;
     width: fit-content;
-    margin: 0 auto 0px auto;
-    cursor: pointer;
-    transform: translateY(0deg);
+    margin: 0 auto 20px auto;
+    font-size: 2.2rem;
   }
 
   .avatar {
@@ -60,23 +59,11 @@
 }
 
 @media (min-width: 800px) {
-  .homeHeader {
-    &:hover {
-      color: #6e07f3;
-      transform: scale(1.1);
-    }
-  }
   .background {
     max-width: 50%;
     padding: 0;
     margin-bottom: 0;
     margin-bottom: -0.4rem;
-  }
-  span {
-    &:hover {
-      cursor: pointer;
-      text-decoration: underline;
-    }
   }
 }
 @media (min-width: 1200px) {
