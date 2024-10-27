@@ -8,6 +8,37 @@ export default function Works() {
   return (
     <div className={styles.main}>
       <h1 className={styles.worksHeader}>My Recent works</h1>
+      <div className={styles.line}></div>
+      <div className={styles.quizPlatform}>
+        <div className={styles.content}>
+          <div className={styles.flex}>
+            <MdQuiz color="#6E07F3" size={"2rem"} />
+            <h2 className={styles.cryptoListHeader}>Quiz Platform</h2>
+          </div>
+          <p className={styles.text}>
+            The Quiz Platform is a Full-Stack application designed for users to
+            craft their own quizzes, participate in quizzes created by others,
+            and leave ratings and comments.
+          </p>
+
+          <a
+            target="_blank"
+            rel="noreferrer"
+            className={`${styles.flexLink}`}
+            href="https://github.com/Gor-Hoveyan/reactQuizPlatfrom"
+          >
+            <h3 className={styles.projectLink}>View on github</h3>
+            <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
+          </a>
+        </div>
+
+        <img
+          className={styles.quizPlatformImg}
+          src="https://i.yapx.cc/X8wZK.png"
+          alt="Quiz platform"
+        />
+      </div>
+      <div className={styles.line}></div>
       <div className={styles.cryptoList}>
         <div className={styles.content}>
           <div className={styles.flex}>
@@ -49,38 +80,7 @@ export default function Works() {
           alt="crypto list"
         />
       </div>
-      <div className={styles.testPlatform}></div>
-
-      <div className={styles.quizPlatform}>
-        <div className={styles.content}>
-          <div className={styles.flex}>
-            <MdQuiz color="#6E07F3" size={"2rem"} />
-            <h2 className={styles.cryptoListHeader}>Quiz Platform</h2>
-          </div>
-          <p className={styles.text}>
-            The Quiz Platform is a Full-Stack application designed for users to
-            craft their own quizzes, participate in quizzes created by others,
-            and leave ratings and comments.
-          </p>
-
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className={`${styles.flexLink}`}
-            href="https://github.com/Gor-Hoveyan/reactQuizPlatfrom"
-          >
-            <h3 className={styles.projectLink}>View on github</h3>
-            <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
-          </a>
-        </div>
-
-        <img
-          className={styles.quizPlatformImg}
-          src="https://i.yapx.cc/X8wZK.png"
-          alt="Quiz platform"
-        />
-      </div>
-      <div className={styles.testPlatform}></div>
+      <div className={styles.line}></div>
     </div>
   );
 }
