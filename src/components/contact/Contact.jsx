@@ -7,9 +7,9 @@ import { ImMail4 } from "react-icons/im";
 export default function Contact() {
   const date = new Date();
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <p className={styles.content}>Live. Create. Explore.</p>
-      <div>
+      <section>
         <a
           className={styles.link}
           target="_blank"
@@ -82,10 +82,10 @@ export default function Contact() {
             size={"2.5rem"}
           />
         </a>
-      </div>
+      </section>
       <div className={styles.footer}>
         <p>Handcrafted by Gor Hoveyan | {date.getFullYear()}</p>
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,10 +6,10 @@ import { MdQuiz } from "react-icons/md";
 
 export default function Works() {
   return (
-    <div className={styles.main}>
+    <section className={styles.main}>
       <h1 className={styles.worksHeader}>My Recent works</h1>
       <div className={styles.line}></div>
-      <div className={styles.quizPlatform}>
+      <section className={styles.quizPlatform}>
         <div className={styles.content}>
           <div className={styles.flex}>
             <MdQuiz color="#6E07F3" size={"2rem"} />
@@ -37,9 +37,9 @@ export default function Works() {
           src="https://i.yapx.cc/X8wZK.png"
           alt="Quiz platform"
         />
-      </div>
+      </section>
       <div className={styles.line}></div>
-      <div className={styles.cryptoList}>
+      <section className={styles.cryptoList}>
         <div className={styles.content}>
           <div className={styles.flex}>
             <FaBitcoin color="#6E07F3" size={"2rem"} />
@@ -79,8 +79,8 @@ export default function Works() {
           src="https://i.yapx.cc/X8U5Y.png"
           alt="crypto list"
         />
-      </div>
+      </section>
       <div className={styles.line}></div>
-    </div>
+    </section>
   );
 }
