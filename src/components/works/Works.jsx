@@ -3,11 +3,15 @@ import styles from "./Works.module.scss";
 import { FaBitcoin, FaBomb } from "react-icons/fa";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { MdQuiz } from "react-icons/md";
+import quizPlatformImg from "./../../assets/images/quiz-platform.png";
+import minesweeperImg from "./../../assets/images/minesweeper.png";
+import firstCryptoImg from "./../../assets/images/crypto1.png";
+import secondCryptoImg from "./../../assets/images/crypto2.png";
 
 export default function Works() {
   return (
     <section className={styles.main}>
-      <h1 className={styles.worksHeader}>My Recent Works</h1>
+      <h1 className={styles.worksHeader}>Recent Works</h1>
       <div className={styles.line}></div>
       <section className={styles.quizPlatform}>
         <section className={styles.content}>
@@ -34,7 +38,7 @@ export default function Works() {
 
         <img
           className={styles.quizPlatformImg}
-          src="https://i.yapx.cc/X8wZK.png"
+          src={quizPlatformImg}
           alt="Quiz platform"
         />
       </section>
@@ -63,7 +67,7 @@ export default function Works() {
 
         <img
           className={styles.minesweeperImg}
-          src="https://i.yapx.cc/YGzrR.png"
+          src={minesweeperImg}
           alt="Minesweeper"
         />
       </section>
@@ -96,7 +100,7 @@ export default function Works() {
         <img
           style={{ borderTopRightRadius: "3%", borderTopLeftRadius: "3%" }}
           className={styles.cryptoListImg}
-          src="https://i.yapx.cc/X8U5e.png"
+          src={firstCryptoImg}
           alt="crypto list"
         />
         <br />
@@ -106,7 +110,7 @@ export default function Works() {
             borderBottomLeftRadius: "3%",
           }}
           className={styles.cryptoListImg}
-          src="https://i.yapx.cc/X8U5Y.png"
+          src={secondCryptoImg}
           alt="crypto list"
         />
       </section>

@@ -1,5 +1,7 @@
 import React from "react";
 import styles from "./Home.module.scss";
+import avatar from "./../../assets/images/avatar.png";
+import { ReactComponent as BackgroundSvg } from "./../../assets/images/hero-devices.svg";
 
 export default function Home() {
   return (
@@ -12,12 +14,8 @@ export default function Home() {
           success of overall product.
         </p>
       </section>
-      <img
-        className={styles.avatar}
-        alt="avatar"
-        src="https://i.yapx.cc/X8wXw.png"
-      />
-      <img
+      <img className={styles.avatar} alt="avatar" src={avatar} />
+      <BackgroundSvg
         className={styles.background}
         alt="bg"
         src="https://mattfarley.ca/img/hero-devices.svg"
