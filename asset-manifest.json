@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c72ad58e.css",
+    "main.js": "/static/js/main.3fa504cb.js",
+    "static/css/801.e3650cc0.chunk.css": "/static/css/801.e3650cc0.chunk.css",
+    "static/js/801.10b746a7.chunk.js": "/static/js/801.10b746a7.chunk.js",
+    "static/css/448.b4fc7a59.chunk.css": "/static/css/448.b4fc7a59.chunk.css",
+    "static/js/448.d5fe9993.chunk.js": "/static/js/448.d5fe9993.chunk.js",
+    "static/js/453.9a3fc660.chunk.js": "/static/js/453.9a3fc660.chunk.js",
+    "static/js/714.d776d53f.chunk.js": "/static/js/714.d776d53f.chunk.js",
+    "static/js/390.9e100c78.chunk.js": "/static/js/390.9e100c78.chunk.js",
+    "static/media/crypto2.png": "/static/media/crypto2.a62d791ff18ae9c92bbf.png",
+    "static/media/crypto1.png": "/static/media/crypto1.895080741a072ad36ca0.png",
+    "static/media/quiz-platform.png": "/static/media/quiz-platform.b38f8cdf344f6e22f4ce.png",
+    "static/media/avatar.png": "/static/media/avatar.eee4a4e1b6efe8c116e2.png",
+    "static/media/hero-devices.svg": "/static/media/hero-devices.ca82e97c349a897082b6268dd7f8d733.svg",
+    "static/media/minesweeper.png": "/static/media/minesweeper.55c24db2ada42d93616e.png",
+    "index.html": "/index.html",
+    "main.c72ad58e.css.map": "/static/css/main.c72ad58e.css.map",
+    "main.3fa504cb.js.map": "/static/js/main.3fa504cb.js.map",
+    "801.e3650cc0.chunk.css.map": "/static/css/801.e3650cc0.chunk.css.map",
+    "801.10b746a7.chunk.js.map": "/static/js/801.10b746a7.chunk.js.map",
+    "448.b4fc7a59.chunk.css.map": "/static/css/448.b4fc7a59.chunk.css.map",
+    "448.d5fe9993.chunk.js.map": "/static/js/448.d5fe9993.chunk.js.map",
+    "453.9a3fc660.chunk.js.map": "/static/js/453.9a3fc660.chunk.js.map",
+    "714.d776d53f.chunk.js.map": "/static/js/714.d776d53f.chunk.js.map",
+    "390.9e100c78.chunk.js.map": "/static/js/390.9e100c78.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c72ad58e.css",
+    "static/js/main.3fa504cb.js"
+  ]
+}
