@@ -1,8 +1,10 @@
 import styles from "./App.module.scss";
 import About from "./components/about/About";
 import Home from "./components/home/Home";
-import Works from "./components/works/Works";
-import Contact from "./components/contact/Contact";
+import { lazy } from "react";
+
+const Works = lazy(() => import("./components/works/Works"));
+const Contact = lazy(() => import("./components/contact/Contact"));
 
 function App() {
   return (
