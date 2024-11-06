@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Home.module.scss";
-import avatar from "./../../assets/images/avatar.png";
+import avatar from "./../../assets/images/avatar.webp";
 import { ReactComponent as BackgroundSvg } from "./../../assets/images/hero-devices.svg";
 
 export default function Home() {

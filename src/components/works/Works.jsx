@@ -3,10 +3,10 @@ import styles from "./Works.module.scss";
 import { FaBitcoin, FaBomb } from "react-icons/fa";
 import { RiExternalLinkFill } from "react-icons/ri";
 import { MdQuiz } from "react-icons/md";
-import quizPlatformImg from "./../../assets/images/quiz-platform.png";
-import minesweeperImg from "./../../assets/images/minesweeper.png";
-import firstCryptoImg from "./../../assets/images/crypto1.png";
-import secondCryptoImg from "./../../assets/images/crypto2.png";
+import quizPlatformImg from "./../../assets/images/quiz-platform.webp";
+import minesweeperImg from "./../../assets/images/minesweeper.webp";
+import firstCryptoImg from "./../../assets/images/crypto1.webp";
+import secondCryptoImg from "./../../assets/images/crypto2.webp";
 
 export default function Works() {
   return (
