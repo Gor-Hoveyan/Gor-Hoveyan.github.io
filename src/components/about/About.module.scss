@@ -39,6 +39,7 @@
         margin: 5px 5px;
         box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.6);
         text-align: center;
+        cursor: url("../../assets/images/pointer.svg"), auto;
       }
     }
   }
@@ -51,7 +52,7 @@
 
       span {
         transition: 0.6s;
-        cursor: pointer;
+        cursor: url("../../assets/images/pointer.svg"), auto;
         &:hover {
           background-color: #67d3db;
           text-decoration: none;

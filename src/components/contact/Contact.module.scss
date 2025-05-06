@@ -17,6 +17,9 @@
   .contacts {
     padding: 30px 0;
   }
+  .link, svg, path {
+    cursor: url("../../assets/images/pointer.svg"), auto;
+  }
 }
 
 @media (max-width: 350px) {

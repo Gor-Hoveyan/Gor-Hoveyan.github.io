@@ -25,7 +25,7 @@
   .avatar {
     margin: 50px 0;
     transition: transform 0.3s;
-    cursor: pointer;
+    cursor: url("../../assets/images/pointer.svg"), auto;
     animation: avatarAnimation 3s linear;
     border-radius: 50%;
 

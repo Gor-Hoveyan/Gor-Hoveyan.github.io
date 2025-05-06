@@ -37,6 +37,10 @@
     width: fit-content;
     text-decoration: none;
     color: black;
+    cursor: url("../../assets/images/pointer.svg"), auto;
+    h3, svg, path {
+      cursor: url("../../assets/images/pointer.svg"), auto;
+    }
   }
 
   .cryptoListHeader {
