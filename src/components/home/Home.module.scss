@@ -25,7 +25,7 @@
     margin: 50px 0;
     transition: transform 0.3s;
     cursor: url("../../assets/images/pointer.svg"), auto;
-    animation: avatarAnimation 3s linear;
+    animation: avatarAnimation 3s linear 1;
     border-radius: 50%;
 
     &:hover {
@@ -86,7 +86,9 @@
   0% {
     transform: rotateY(0deg);
   }
-
+  50% {
+    transform: rotateY(180deg);
+  }
   100% {
     transform: rotateY(360deg);
   }
@@ -102,6 +104,18 @@
 }
 @media (min-width: 1200px) {
   .avatar {
-    max-width: 20%;
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .avatar {
+    max-width: 30%;
+  }
+}
+
+@media (max-width: 600px) {
+  .avatar {
+    max-width: 50%;
   }
 }
