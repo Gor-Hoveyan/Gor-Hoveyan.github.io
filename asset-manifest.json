@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1852a391.css",
-    "main.js": "/static/js/main.13b501a3.js",
+    "main.css": "/static/css/main.20dff426.css",
+    "main.js": "/static/js/main.99dfbfb6.js",
     "static/css/364.2344eb3a.chunk.css": "/static/css/364.2344eb3a.chunk.css",
     "static/js/364.6140d01b.chunk.js": "/static/js/364.6140d01b.chunk.js",
     "static/css/448.107cbeb6.chunk.css": "/static/css/448.107cbeb6.chunk.css",
@@ -12,14 +12,14 @@
     "static/media/crypto1.webp": "/static/media/crypto1.0cf40e855b46d0e8bbb4.webp",
     "static/media/crypto2.webp": "/static/media/crypto2.8b9a83da268158c80339.webp",
     "static/media/hero-devices.svg": "/static/media/hero-devices.e54cb1e91b72c0c2cda54364dda473d5.svg",
+    "static/media/avatar.webp": "/static/media/avatar.694d2e67f2dbbbc4a714.webp",
     "static/media/quiz-platform.webp": "/static/media/quiz-platform.1d8fd606210ba92c48cd.webp",
-    "static/media/avatar.webp": "/static/media/avatar.c7016e278b53984b55e9.webp",
     "static/media/minesweeper.webp": "/static/media/minesweeper.f81ed1e5406ef0178f7f.webp",
     "static/media/pointer.svg": "/static/media/pointer.df7ef7fd51b1d69c3790.svg",
     "static/media/cursor.svg": "/static/media/cursor.bde64da675258d68036f.svg",
     "index.html": "/index.html",
-    "main.1852a391.css.map": "/static/css/main.1852a391.css.map",
-    "main.13b501a3.js.map": "/static/js/main.13b501a3.js.map",
+    "main.20dff426.css.map": "/static/css/main.20dff426.css.map",
+    "main.99dfbfb6.js.map": "/static/js/main.99dfbfb6.js.map",
     "364.2344eb3a.chunk.css.map": "/static/css/364.2344eb3a.chunk.css.map",
     "364.6140d01b.chunk.js.map": "/static/js/364.6140d01b.chunk.js.map",
     "448.107cbeb6.chunk.css.map": "/static/css/448.107cbeb6.chunk.css.map",
@@ -29,7 +29,7 @@
     "390.81c4ed6a.chunk.js.map": "/static/js/390.81c4ed6a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.1852a391.css",
-    "static/js/main.13b501a3.js"
+    "static/css/main.20dff426.css",
+    "static/js/main.99dfbfb6.js"
   ]
 }
