@@ -2,6 +2,7 @@ import styles from "./App.module.scss";
 import About from "./components/about/About";
 import Home from "./components/home/Home";
 import { lazy, useRef } from "react";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 const Works = lazy(() => import("./components/works/Works"));
 const Contact = lazy(() => import("./components/contact/Contact"));
@@ -14,6 +15,7 @@ function App() {
       <About />
       <Works />
       <Contact ref={contactRef}/>
+      <ScrollToTop />
     </main>
   );
 }
