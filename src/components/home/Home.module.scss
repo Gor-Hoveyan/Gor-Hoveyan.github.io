@@ -9,7 +9,6 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-
   span {
     font-weight: bolder;
     color: #6e07f3;
@@ -48,6 +47,39 @@
     height: auto;
   }
 }
+
+.btn {
+  border: 2px solid #6e07f3;
+  border-radius: 6px;
+  background: none;
+  padding: 10px 20px; /* Added padding for better spacing */
+  font-size: 1.1rem; /* Slightly larger font for readability */
+  font-weight: 600;
+  color: black;
+  margin-bottom: 50px;
+  transition: all 0.3s ease-in-out; /* Simplified transition */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: url('./../../assets/images/pointer.svg'), auto;
+
+  svg {
+    margin-right: 10px; /* Increased space between the icon and text */
+  }
+
+  &:hover {
+    transform: scale(1.1); /* Slightly enlarged for emphasis */
+    background: #6e07f3;
+    color: white;
+    border: 2px solid transparent; /* Subtle change in border to make it smoother */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added box-shadow for a lifted effect */
+  }
+
+  &:focus {
+    outline: none; /* Remove the default outline */
+  }
+}
+
 
 @keyframes avatarAnimation {
   0% {

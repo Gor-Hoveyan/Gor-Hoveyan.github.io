@@ -1,13 +1,13 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Contact.module.scss";
 import { ImLinkedin } from "react-icons/im";
 import { FaTelegram, FaGithub } from "react-icons/fa6";
 import { ImMail4 } from "react-icons/im";
 
-export default function Contact() {
+const Contact = forwardRef((props, ref) =>  {
   const date = new Date();
   return (
-    <footer className={styles.main}>
+    <footer className={styles.main} ref={ref}>
       <p className={styles.content}>Live. Create. Explore.</p>
       <section className={styles.contacts}>
         <a
@@ -91,4 +91,6 @@ export default function Contact() {
       </div>
     </footer>
   );
-}
+})
+
+export default Contact;

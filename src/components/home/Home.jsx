@@ -2,8 +2,9 @@ import React from "react";
 import styles from "./Home.module.scss";
 import avatar from "./../../assets/images/avatar.webp";
 import { ReactComponent as BackgroundSvg } from "./../../assets/images/hero-devices.svg";
+import { FiMessageCircle } from "react-icons/fi";
 
-export default function Home() {
+export default function Home({onContactClick}) {
   return (
     <section className={styles.main}>
       <section className={styles.contentDiv}>
@@ -15,6 +16,10 @@ export default function Home() {
         </p>
       </section>
       <img className={styles.avatar} alt="avatar" src={avatar} />
+      <button className={styles.btn} onClick={() => onContactClick()}>
+        <FiMessageCircle />
+        Get in Touch!
+      </button>
       <BackgroundSvg
         className={styles.background}
         alt="bg"
