@@ -4,6 +4,7 @@ import Home from "./components/home/Home";
 import { lazy, useRef } from "react";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 import Header from "./components/header/Header";
+import BurgerMenu from "./components/burgerMenu/BurgerMenu";
 
 const Works = lazy(() => import("./components/works/Works"));
 const Contact = lazy(() => import("./components/contact/Contact"));
@@ -28,6 +29,7 @@ function App() {
   return (
     <main className={styles.main}>
       <Header onContactClick={onContactClick} onAboutClick={onAboutClick} onWorksClick={onWorksClick} />
+      <BurgerMenu  onContactClick={onContactClick} onAboutClick={onAboutClick} onWorksClick={onWorksClick} />
       <Home onContactClick/>
       <About  ref={aboutRef}/>
       <Works ref={worksRef}/>
