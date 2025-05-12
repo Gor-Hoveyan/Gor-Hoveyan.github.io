@@ -27,7 +27,7 @@
     cursor: url("../../assets/images/pointer.svg"), auto;
     animation: avatarAnimation 3s linear 1;
     border-radius: 50%;
-
+    z-index: 0;
     &:hover {
       animation: avatarAnimation 4s linear infinite;
     }

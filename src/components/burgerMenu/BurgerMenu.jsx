@@ -19,9 +19,9 @@ export default function BurgerMenu({onContactClick, onAboutClick, onWorksClick})
             </p>
             <ul className={styles.list} onClick={(e) => e.stopPropagation()}>
                 <li onClick={() => {scrollToTop(); setIsOpen(false)}} className={styles.link}>HOME</li>
-                <li onClick={() => {onAboutClick(); setIsOpen(false)}} className={styles.link}>ABOUT ME</li>
-                <li onClick={() => {onWorksClick(); setIsOpen(false)}} className={styles.link}>MY WORKS</li>
-                <li onClick={() => {onContactClick(); setIsOpen(false)}} className={styles.link}>CONTACT ME</li>
+                <li onClick={() => {onAboutClick(); setIsOpen(false)}} className={styles.link}>ABOUT</li>
+                <li onClick={() => {onWorksClick(); setIsOpen(false)}} className={styles.link}>WORKS</li>
+                <li onClick={() => {onContactClick(); setIsOpen(false)}} className={styles.link}>CONTACT</li>
             </ul>
         </div>
     </div>

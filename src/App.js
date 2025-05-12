@@ -30,7 +30,7 @@ function App() {
     <main className={styles.main}>
       <Header onContactClick={onContactClick} onAboutClick={onAboutClick} onWorksClick={onWorksClick} />
       <BurgerMenu  onContactClick={onContactClick} onAboutClick={onAboutClick} onWorksClick={onWorksClick} />
-      <Home onContactClick/>
+      <Home onContactClick={onContactClick}/>
       <About  ref={aboutRef}/>
       <Works ref={worksRef}/>
       <Contact ref={contactRef}/>

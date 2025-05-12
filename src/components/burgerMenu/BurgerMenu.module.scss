@@ -1,14 +1,13 @@
 .main {
     position: fixed;
-    width: 100%;
-    height: 100%;
+    z-index: 1;
 }
 
 .close, .open {
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 }
 
 .close {
@@ -18,14 +17,15 @@
 }
 
 .open {
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(2px);
     transform: translateX(0);
     transition-duration: 0.8s;
 }
 
 .list {
-    height: 100%;
-    width: 80%;
+    height: 100vh;
+    width: 70vw;
     background: white;
     padding-left: 15%;
     padding-top: 10%;
@@ -35,7 +35,7 @@
 
 .closeBtn, .link {
     background-color: white;
-    width: 80%;
+    width: 70%;
 }
 
 .link {
@@ -43,11 +43,14 @@
     margin: 50px 0;
     cursor: url('./../../assets/images/pointer.svg'), auto;
     text-align: center;
+    padding-bottom: 15px;
 }
 
 .closeBtn {
     padding-left: 15px;
     padding-top: 15px;
+    width: 70%;
+    position: absolute;
 }
 
 .closeBtn {
