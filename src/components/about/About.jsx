@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./About.module.scss";
 import {
   FaHtml5,
@@ -45,9 +45,9 @@ const skills = [
   {icon: <FaGitlab size={30}/>, name: "GitLab"},
 ];
 
-export default function About() {
+const About = forwardRef((props, ref) =>  {
   return (
-    <section className={styles.about}>
+    <section className={styles.about} ref={ref}>
       <h1 className={styles.header}>
         I'm looking forward to working with you.
       </h1>
@@ -72,4 +72,7 @@ export default function About() {
       </section>
     </section>
   );
-}
+})
+
+
+export default About;

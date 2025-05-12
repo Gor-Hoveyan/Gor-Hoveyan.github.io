@@ -1,4 +1,4 @@
-import React from "react";
+import React, { forwardRef } from "react";
 import styles from "./Works.module.scss";
 import { FaBitcoin, FaBomb } from "react-icons/fa";
 import { RiExternalLinkFill } from "react-icons/ri";
@@ -8,9 +8,9 @@ import minesweeperImg from "./../../assets/images/minesweeper.webp";
 import firstCryptoImg from "./../../assets/images/crypto1.webp";
 import secondCryptoImg from "./../../assets/images/crypto2.webp";
 
-export default function Works() {
+const Works = forwardRef((props, ref) =>  {
   return (
-    <section className={styles.main}>
+    <section className={styles.main} ref={ref}>
       <h1 className={styles.worksHeader}>Recent Works</h1>
       <div className={styles.line}></div>
       <section className={styles.quizPlatform}>
@@ -116,4 +116,6 @@ export default function Works() {
       </section>
     </section>
   );
-}
+})
+
+export default Works;
