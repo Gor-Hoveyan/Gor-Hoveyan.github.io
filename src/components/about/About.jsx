@@ -6,7 +6,6 @@ import {
   FaSass,
   FaNodeJs,
   FaReact,
-  FaGit,
   FaGitAlt,
   FaGithub,
   FaGitlab,
@@ -52,12 +51,12 @@ const About = forwardRef((props, ref) =>  {
         I'm looking forward to working with you.
       </h1>
       <section className={styles.content}>
-        I am a success-oriented web developer from Armenia. I enjoy creating
-        efficient and user-friendly full-stack applications using{" "}
-        <strong>React/Next.js</strong> for
-        front-end and <strong>Node.js</strong> for
-        back-end. I'm always up for a new challenge, excited to tackle complex
-        problems and continue expanding my skills in web development.
+        <p>
+          I'm Gor Hoveyan, a Front-End Developer dedicated to building user-centric web interfaces that solve problems and delight users. My expertise lies in developing responsive, high-performance applications using React and Next.js, with a keen eye for detail and clean code.
+        </p>
+        <p>
+          I also bring a working knowledge of back-end development including Express.js and API integration, which helps me understand the full picture. I'm looking to apply my skills to challenging projects and collaborate with forward-thinking teams. Check out my work and let's connect!
+        </p>
       </section>
       <section className={styles.skills}>
         <h1 className={styles.header}>Skills</h1>
