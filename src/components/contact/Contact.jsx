@@ -86,7 +86,7 @@ const Contact = forwardRef((props, ref) =>  {
       <div className={styles.footer}>
         <p className={styles.credentials}>
           Handcrafted by Gor Hoveyan <br />{" "}
-          <span className={styles.date}>© {date.getFullYear()}</span>
+          <span className={styles.date}>© 2022-{date.getFullYear()}</span>
         </p>
       </div>
     </footer>
