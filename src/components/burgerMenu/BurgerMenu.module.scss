@@ -21,6 +21,8 @@
     backdrop-filter: blur(2px);
     transform: translateX(0);
     transition-duration: 0.8s;
+    position: fixed;
+    overflow-y: hidden;
 }
 
 .list {
@@ -28,7 +30,7 @@
     width: 70vw;
     background: white;
     padding-left: 15%;
-    padding-top: 10%;
+    padding-top: 7%;
     list-style: none;
     font-size: large;
 }

@@ -1,13 +1,20 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import styles from './BurgerMenu.module.scss';
 import { RiMenuLine } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 
-export default function BurgerMenu({onContactClick, onAboutClick, onWorksClick}) {
+export default function BurgerMenu({onSkillsClick, onContactClick, onAboutClick, onWorksClick}) {
     const [isOpen, setIsOpen] = useState(false);
     const scrollToTop = () => {
       window.scrollTo({ top: 0, behavior: "smooth" });
     };
+    useEffect(() => {
+    if(isOpen === true) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "scroll";
+    }
+}, [isOpen]);
   return (
     <div className={styles.main}>
         <div className={styles.openBtnBg}>
@@ -20,6 +27,7 @@ export default function BurgerMenu({onContactClick, onAboutClick, onWorksClick})
             <ul className={styles.list} onClick={(e) => e.stopPropagation()}>
                 <li onClick={() => {scrollToTop(); setIsOpen(false)}} className={styles.link}>HOME</li>
                 <li onClick={() => {onAboutClick(); setIsOpen(false)}} className={styles.link}>ABOUT</li>
+                <li onClick={() => {onSkillsClick(); setIsOpen(false)}} className={styles.link}>SKILLS</li>
                 <li onClick={() => {onWorksClick(); setIsOpen(false)}} className={styles.link}>WORKS</li>
                 <li onClick={() => {onContactClick(); setIsOpen(false)}} className={styles.link}>CONTACT</li>
             </ul>
