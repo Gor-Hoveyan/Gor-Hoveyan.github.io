@@ -20,9 +20,7 @@ const Works = forwardRef((props, ref) =>  {
             <h2 className={styles.cryptoListHeader}>Quiz Platform</h2>
           </div>
           <p className={styles.text}>
-            The Quiz Platform is a Full-Stack application designed for users to
-            craft their own quizzes, participate in quizzes created by others,
-            and leave ratings and comments.
+            Create, share, and take interactive quizzes. Built with React, Zustand, Express, and MongoDB. Features secure user authentication, an intuitive quiz builder (custom questions & answers), an engaging quiz-taking experience with instant scoring, and persistent storage for all created quizzes.
           </p>
 
           <a
@@ -50,9 +48,7 @@ const Works = forwardRef((props, ref) =>  {
             <h2 className={styles.cryptoListHeader}>Minesweeper</h2>
           </div>
           <p className={styles.text}>
-            Minesweeper is a logic-based puzzle game where players uncover
-            squares on a grid to avoid hidden mines while deducing their
-            locations based on numerical hints.
+            A faithful recreation on the beloved Minesweeper. Built with React and Tailwind, this project challenges players to use numerical clues to strategically uncover squares and avoid hidden mines on a grid. Features customizable grid sizes for tailored difficulty and game history to track your performance.
           </p>
           <a
             target="_blank"
@@ -79,12 +75,11 @@ const Works = forwardRef((props, ref) =>  {
             <h2 className={styles.cryptoListHeader}>Crypto List</h2>
           </div>
           <p className={styles.text}>
-            Crypto List App is a Front-End application that displays the latest
-            information about cryptocurrencies using dynamic data from the{" "}
+            A dynamic Front-End application built with React and Redux Toolkit that provides users with up-to-the-minute cryptocurrency information. It seamlessly fetches and displays live data including prices, market caps, and volume from the{" "}
             <a className={styles.link} href="https://coincap.io/">
               CoinCap API
             </a>
-            .
+            , offering a clear overview of the crypto market.
           </p>
           <a
             target="_blank"
