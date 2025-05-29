@@ -23,6 +23,7 @@
     transition-duration: 0.8s;
     position: fixed;
     overflow-y: hidden;
+    z-index: 1001;
 }
 
 .list {

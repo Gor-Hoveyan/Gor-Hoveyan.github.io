@@ -15,6 +15,7 @@ export default function BurgerMenu({onSkillsClick, onContactClick, onAboutClick,
       document.body.style.overflowY = "scroll";
     }
 }, [isOpen]);
+  const closeMenu = () => setIsOpen(false);
   return (
     <div className={styles.main}>
         <div className={styles.openBtnBg}>

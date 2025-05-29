@@ -76,7 +76,9 @@ const Works = forwardRef((props, ref) =>  {
           </div>
           <p className={styles.text}>
             A dynamic Front-End application built with React and Redux Toolkit that provides users with up-to-the-minute cryptocurrency information. It seamlessly fetches and displays live data including prices, market caps, and volume from the{" "}
-            <a className={styles.link} href="https://coincap.io/">
+            <a className={styles.link} 
+             target="_blank"
+             href="https://coincap.io/">
               CoinCap API
             </a>
             , offering a clear overview of the crypto market.
