@@ -30,13 +30,23 @@ function App() {
   }
   return (
     <main className={styles.main}>
-      <Header onSkillsClick={onSkillsClick} onContactClick={onContactClick} onAboutClick={onAboutClick} onWorksClick={onWorksClick} />
-      <BurgerMenu onSkillsClick={onSkillsClick} onContactClick={onContactClick} onAboutClick={onAboutClick} onWorksClick={onWorksClick} />
-      <Home onContactClick={onContactClick}/>
-      <About  ref={aboutRef}/>
-      <Skills ref={skillsRef}/>
-      <Works ref={worksRef}/>
-      <Contact ref={contactRef}/>
+      <Header
+        onSkillsClick={onSkillsClick}
+        onContactClick={onContactClick}
+        onAboutClick={onAboutClick}
+        onWorksClick={onWorksClick}
+      />
+      <BurgerMenu
+        onSkillsClick={onSkillsClick}
+        onContactClick={onContactClick}
+        onAboutClick={onAboutClick}
+        onWorksClick={onWorksClick}
+      />
+      <Home onContactClick={onContactClick} />
+      <About ref={aboutRef} />
+      <Skills ref={skillsRef} />
+      <Works ref={worksRef} />
+      <Contact ref={contactRef} />
       <ScrollToTop />
     </main>
   );

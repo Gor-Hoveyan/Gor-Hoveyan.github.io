@@ -1,86 +1,90 @@
 .main {
-    position: fixed;
-    z-index: 1;
+  position: fixed;
+  z-index: 1;
 }
 
-.close, .open {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 100vh;
+.close,
+.open {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
 }
 
 .close {
-    transform: translateX(-700px);
-    transition-duration: 0.8s;
-    background-color: white;
+  transform: translateX(-800px);
+  transition-duration: 0.8s;
+  background-color: white;
 }
 
 .open {
-    background: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(2px);
-    transform: translateX(0);
-    transition-duration: 0.8s;
-    position: fixed;
-    overflow-y: hidden;
-    z-index: 1001;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  transform: translateX(0);
+  transition-duration: 0.8s;
+  position: fixed;
+  overflow-y: hidden;
+  z-index: 1001;
 }
 
 .list {
-    height: 100vh;
-    width: 70vw;
-    background: white;
-    padding-left: 15%;
-    padding-top: 10%;
-    list-style: none;
-    font-size: large;
+  height: 100vh;
+  width: 70vw;
+  background: white;
+  padding-left: 15%;
+  padding-top: 10%;
+  list-style: none;
+  font-size: large;
 }
 
-.closeBtn, .link {
-    background-color: white;
-    width: 70%;
+.closeBtn,
+.link {
+  background-color: white;
+  width: 70%;
 }
 
 .link {
-    border-bottom: 1px solid rgb(230, 230, 230);
-    margin: 50px 0;
-    cursor: url('./../../assets/images/pointer.svg'), auto;
-    text-align: center;
-    padding-bottom: 15px;
+  border-bottom: 1px solid rgb(230, 230, 230);
+  margin: 50px 0;
+  cursor: url("./../../assets/images/pointer.svg"), auto;
+  text-align: center;
+  padding-bottom: 15px;
 }
 
 .closeBtn {
-    padding-left: 15px;
-    padding-top: 15px;
-    width: 70%;
-    position: absolute;
+  padding-left: 15px;
+  padding-top: 15px;
+  width: 70%;
+  position: absolute;
 }
 
 .closeBtn {
-    svg, path {
-        cursor: url('./../../assets/images/pointer.svg'), auto;
-    }
+  svg,
+  path {
+    cursor: url("./../../assets/images/pointer.svg"), auto;
+  }
 }
 
 .openBtn {
-    cursor: url('./../../assets/images/pointer.svg'), auto;
-    path, svg {
-        cursor: url('./../../assets/images/pointer.svg'), auto;
-    }
+  cursor: url("./../../assets/images/pointer.svg"), auto;
+  path,
+  svg {
+    cursor: url("./../../assets/images/pointer.svg"), auto;
+  }
 }
 
 .openBtnBg {
-    background: rgba(255, 255, 255, 0.7);
-    border-bottom-right-radius: 50%;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background: rgba(255, 255, 255, 0.7);
+  border-bottom-right-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-@media (min-width: 700px) {
-    .main {
-        display: none;
-    }
+@media (min-width: 800px) {
+  .main {
+    display: none;
+  }
 }

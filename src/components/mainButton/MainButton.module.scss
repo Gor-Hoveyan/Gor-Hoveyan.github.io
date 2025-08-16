@@ -1,0 +1,116 @@
+/* These must remain global for the animation to work */
+@property --border-angle-1 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0deg;
+}
+
+@property --border-angle-2 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 90deg;
+}
+
+@property --border-angle-3 {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 180deg;
+}
+
+@keyframes rotateBackground {
+  to {
+    --border-angle-1: 360deg;
+  }
+}
+
+@keyframes rotateBackground2 {
+  to {
+    --border-angle-2: -270deg;
+  }
+}
+
+@keyframes rotateBackground3 {
+  to {
+    --border-angle-3: 540deg;
+  }
+}
+
+.btn {
+  --bright-blue: #6e07f3;
+  --bright-green: #84ff80;
+  --bright-red: #ff8c42;
+  --background: white;
+  --foreground: black;
+  --border-size: 2px;
+  --border-radius: 0.75em;
+  --border-angle-1: 0deg;
+  --border-angle-2: 90deg;
+  --border-angle-3: 180deg;
+  box-shadow: 0px 0px 6px 2px rgba(110, 7, 243, 0.2);
+  margin-bottom: 30px;
+
+  color: var(--foreground);
+  font-size: 1.4rem;
+  border: 0;
+  padding: var(--border-size);
+  display: flex;
+  width: max-content;
+  border-radius: var(--border-radius);
+  background-image: conic-gradient(
+      from var(--border-angle-1) at 10% 15%,
+      transparent,
+      var(--bright-blue) 10%,
+      transparent 30%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-2) at 70% 60%,
+      transparent,
+      var(--bright-green) 10%,
+      transparent 60%,
+      transparent
+    ),
+    conic-gradient(
+      from var(--border-angle-3) at 50% 20%,
+      transparent,
+      var(--bright-red) 10%,
+      transparent 50%,
+      transparent
+    );
+  animation: rotateBackground 6s linear infinite,
+    rotateBackground2 16s linear infinite, rotateBackground3 26s linear infinite;
+}
+
+.btn div {
+  box-sizing: border-box;
+  background: var(--background);
+  padding: 0.8em 1.6em;
+  border-radius: calc(var(--border-radius) - var(--border-size));
+  color: var(--foreground);
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+    background: #6e07f3;
+    color: white;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  svg {
+    margin-right: 10px;
+  }
+}
+
+.content {
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn div,
+.content {
+  cursor: url("./../../assets/images/pointer.svg"), auto;
+  svg {
+    cursor: url("./../../assets/images/pointer.svg"), auto;
+  }
+}
