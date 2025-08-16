@@ -59,33 +59,33 @@
     object-fit: cover;
     object-position: top;
     border-radius: 15px;
-    -webkit-mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 10%,
-        black 90%,
-        transparent
-      ),
-      linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
-    -webkit-mask-composite: destination-in; /* For WebKit browsers */
-    mask-image: linear-gradient(
-        to right,
-        transparent,
-        black 10%,
-        black 90%,
-        transparent
-      ),
-      linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
-    mask-composite: intersect; /* For spec-compliant browsers */
 
+    /* Mask to blur only the bottom */
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      black 50%,
+      black 50%,
+      transparent 100%
+    );
     -webkit-mask-repeat: no-repeat;
     -webkit-mask-position: center;
     -webkit-mask-size: cover;
+    -webkit-mask-composite: destination-in;
+
+    mask-image: linear-gradient(
+      to bottom,
+      black 50%,
+      black 50%,
+      transparent 100%
+    );
     mask-repeat: no-repeat;
     mask-position: center;
     mask-size: cover;
+    mask-composite: intersect;
+
     cursor: url("./../../assets/images/pointer.svg"), auto;
     transition: 0.3s ease;
+
     &:hover {
       transform: scale(1.1);
     }
