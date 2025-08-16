@@ -1,12 +1,14 @@
-import React, { forwardRef } from "react";
+import React, { forwardRef, useState } from "react";
 import styles from "./Works.module.scss";
 import quizPlatformImg from "./../../assets/images/quiz-platform.webp";
 import minesweeperImg from "./../../assets/images/minesweeper.webp";
 import radioTimeMachineImg from "./../../assets/images/radioTimeMachine.webp";
 import firstCryptoImg from "./../../assets/images/crypto1.webp";
 import { FaGithub, FaGlobe } from "react-icons/fa";
+import ViewImage from "../viewImage/ViewImage";
 
 const Works = forwardRef((props, ref) => {
+  const [viewImage, setViewImage] = useState("");
   return (
     <section className={styles.main} ref={ref}>
       <h1 className={styles.worksHeader}>Recent Works</h1>
@@ -19,6 +21,7 @@ const Works = forwardRef((props, ref) => {
             src={quizPlatformImg}
             alt="Quiz platform"
             className={styles.projectImage}
+            onClick={() => setViewImage(quizPlatformImg)}
           />
           <h1 className={styles.projectHeader}>Quiz Platform</h1>
           <p className={styles.projectDescription}>
@@ -42,6 +45,7 @@ const Works = forwardRef((props, ref) => {
             alt="Radio Time Machine"
             src={radioTimeMachineImg}
             className={styles.projectImage}
+            onClick={() => setViewImage(radioTimeMachineImg)}
           />
           <h1 className={styles.projectHeader}>Radio Time Machine</h1>
           <p className={styles.projectDescription}>
@@ -75,6 +79,7 @@ const Works = forwardRef((props, ref) => {
             alt="Crypto Tracker"
             src={firstCryptoImg}
             className={styles.projectImage}
+            onClick={() => setViewImage(firstCryptoImg)}
           />
           <h1 className={styles.projectHeader}>Crypto Tracker</h1>
           <p className={styles.projectDescription}>
@@ -108,6 +113,7 @@ const Works = forwardRef((props, ref) => {
             src={minesweeperImg}
             alt="Minesweeper"
             className={styles.projectImage}
+            onClick={() => setViewImage(minesweeperImg)}
           />
           <h1 className={styles.projectHeader}>Minesweeper</h1>
           <p className={styles.projectDescription}>
@@ -130,6 +136,11 @@ const Works = forwardRef((props, ref) => {
           </div>
         </div>
       </div>
+      {viewImage ? (
+        <ViewImage setViewImage={setViewImage} src={viewImage} />
+      ) : (
+        ""
+      )}
     </section>
   );
 });
