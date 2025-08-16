@@ -13,6 +13,12 @@
   }
 }
 
+.svgCurve {
+  display: block;
+  margin: 0;
+  transform: scaleY(-1);
+}
+
 .skillGrid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
