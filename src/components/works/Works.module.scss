@@ -1,123 +1,118 @@
 .main {
   text-align: center;
-  padding: 50px 5% 20px 5%;
+  margin: 30px 0;
+  width: 100%;
 
   .worksHeader {
-    padding-bottom: 30px;
-    font-size: 2.2rem;
-  }
-
-  .line {
-    border-bottom: 1.5px solid rgba(80, 80, 80, 0.2);
-    border-radius: 50%;
-    margin: 0 auto;
+    font-size: 2.4rem;
+    font-family: Montserrat-Regular;
   }
 
   .content {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto 20px auto;
-    justify-content: space-around;
-    align-items: center;
-
-    .text {
-      margin: 20px 0;
-    }
+    color: rgb(59, 59, 59);
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
   }
+}
 
-  .flex,
-  .flexLink {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: stretch;
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  box-sizing: border-box;
+  gap: 30px 0;
+}
 
-  .flexLink {
-    margin: 0px auto;
-    width: fit-content;
-    text-decoration: none;
-    color: black;
-    cursor: url("../../assets/images/pointer.svg"), auto;
-    h3, svg, path {
-      cursor: url("../../assets/images/pointer.svg"), auto;
-    }
-  }
+.project {
+  max-width: 500px;
+  min-width: 350px;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: 1.5px solid rgba(80, 80, 80, 0.2);
+  margin: auto 25px;
+  box-shadow: rgba(43, 105, 251, 0.06) 0px 0px 16px 16px;
+  text-align: left;
+  height: 100%;
 
-  .cryptoListHeader {
-    width: fit-content;
-    margin-left: 15px;
+  .projectHeader {
+    text-align: left;
+    display: inline-block;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    margin-top: 5px;
   }
 
   .link {
-    text-decoration: none;
     color: #6e07f3;
-    font-weight: bolder;
-    cursor: url("../../assets/images/pointer.svg"), auto;
+    font-weight: 500;
+    text-decoration: none;
+    cursor: url("./../../assets/images/pointer.svg"), auto;
   }
 
-  .quizPlatform,
-  .cryptoList,
-  .minesweeper {
-    width: fit-content;
-    margin: 0 auto;
-    padding: 30px 0 50px 0;
-  }
-
-  .quizPlatformImg {
-    border-radius: 5%;
-    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.5);
-  }
-
-  .minesweeperImg {
-    border-radius: 5%;
-    margin: 0 auto;
-  }
-
-  .projectLink {
-    margin-right: 5px;
-  }
-}
-
-@media (max-width: 900px) {
-  .cryptoListImg {
-    max-width: 100%;
-  }
-
-  .quizPlatformImg,
-  .minesweeperImg {
-    max-width: 100%;
-  }
-
-  .line {
+  .projectImage {
+    height: 200px;
     width: 100%;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 15px;
+    -webkit-mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+      ),
+      linear-gradient(to bottom, transparent, black 10%, black 90%, transparent);
+    -webkit-mask-composite: destination-in; /* For WebKit browsers */
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 10%,
+        black 90%,
+        transparent
+      ),
+      linear-gradient(to bottom, transparent, black 30%, black 70%, transparent);
+    mask-composite: intersect; /* For spec-compliant browsers */
+
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: center;
+    -webkit-mask-size: cover;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: cover;
+    cursor: url("./../../assets/images/pointer.svg"), auto;
+    transition: 0.3s ease;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+
+  .icons {
+    font-size: 30px;
+    margin-top: 15px;
+    color: black;
+    a {
+      margin-right: 15px;
+      cursor: url("./../../assets/images/pointer.svg"), auto;
+      color: black;
+
+      svg,
+      path {
+        cursor: url("./../../assets/images/pointer.svg"), auto;
+      }
+    }
   }
 }
 
-@media (min-width: 800px) {
-  .cryptoListImg {
-    max-width: 60%;
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 100%;
   }
-
-  .line {
-    width: 75%;
-  }
-
-  .quizPlatformImg,
-  .minesweeperImg {
-    max-width: 60%;
-  }
-
-  .flexLink {
-    &:hover {
-      text-decoration: underline;
-      color: #6e07f3;
-    }
-  }
-
-  .link {
-    &:hover {
-      text-decoration: underline;
-    }
+  .project {
+    height: fit-content;
   }
 }

@@ -1,118 +1,137 @@
 import React, { forwardRef } from "react";
 import styles from "./Works.module.scss";
-import { FaBitcoin, FaBomb } from "react-icons/fa";
-import { RiExternalLinkFill } from "react-icons/ri";
-import { MdQuiz } from "react-icons/md";
 import quizPlatformImg from "./../../assets/images/quiz-platform.webp";
 import minesweeperImg from "./../../assets/images/minesweeper.webp";
+import radioTimeMachineImg from "./../../assets/images/radioTimeMachine.webp";
 import firstCryptoImg from "./../../assets/images/crypto1.webp";
-import secondCryptoImg from "./../../assets/images/crypto2.webp";
+import { FaGithub, FaGlobe } from "react-icons/fa";
 
-const Works = forwardRef((props, ref) =>  {
+const Works = forwardRef((props, ref) => {
   return (
     <section className={styles.main} ref={ref}>
       <h1 className={styles.worksHeader}>Recent Works</h1>
-      <div className={styles.line}></div>
-      <section className={styles.quizPlatform}>
-        <section className={styles.content}>
-          <div className={styles.flex}>
-            <MdQuiz color="#6E07F3" size={"2rem"} />
-            <h2 className={styles.cryptoListHeader}>Quiz Platform</h2>
-          </div>
-          <p className={styles.text}>
-            Create, share, and take interactive quizzes. Built with React, Zustand, Express, and MongoDB. Features secure user authentication, an intuitive quiz builder (custom questions & answers), an engaging quiz-taking experience with instant scoring, and persistent storage for all created quizzes.
+      <p className={styles.content}>
+        A showcase of projects highlighting creativity and clean code.
+      </p>
+      <div className={styles.grid}>
+        <div className={styles.project}>
+          <img
+            src={quizPlatformImg}
+            alt="Quiz platform"
+            className={styles.projectImage}
+          />
+          <h1 className={styles.projectHeader}>Quiz Platform</h1>
+          <p className={styles.projectDescription}>
+            Create, share, and take interactive quizzes. Built with React,
+            Zustand, Express, and MongoDB. Features secure user authentication,
+            an intuitive quiz builder (custom questions & answers), an engaging
+            quiz-taking experience with instant scoring, and persistent storage
+            for all created quizzes.
           </p>
-
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className={`${styles.flexLink}`}
-            href="https://github.com/Gor-Hoveyan/reactQuizPlatfrom"
-          >
-            <h3 className={styles.projectLink}>View on github</h3>
-            <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
-          </a>
-        </section>
-
-        <img
-          className={styles.quizPlatformImg}
-          src={quizPlatformImg}
-          alt="Quiz platform"
-        />
-      </section>
-      <div className={styles.line}></div>
-      <section className={styles.minesweeper}>
-        <section className={styles.content}>
-          <div className={styles.flex}>
-            <FaBomb color="#6E07F3" size={"2rem"} />
-            <h2 className={styles.cryptoListHeader}>Minesweeper</h2>
+          <div className={styles.icons}>
+            <a
+              target="_blank"
+              href="https://github.com/Gor-Hoveyan/react-quiz-platform"
+            >
+              <FaGithub />
+            </a>
           </div>
-          <p className={styles.text}>
-            A faithful recreation on the beloved Minesweeper. Built with React and Tailwind, this project challenges players to use numerical clues to strategically uncover squares and avoid hidden mines on a grid. Features customizable grid sizes for tailored difficulty and game history to track your performance.
+        </div>{" "}
+        <div className={styles.project}>
+          <img
+            alt="Radio Time Machine"
+            src={radioTimeMachineImg}
+            className={styles.projectImage}
+          />
+          <h1 className={styles.projectHeader}>Radio Time Machine</h1>
+          <p className={styles.projectDescription}>
+            An interactive full-stack web app that lets you explore the most
+            popular tracks from the 1700s to today. Built with Next.js 14,
+            Tailwind CSS, and TypeScript, it fetches data from the{" "}
+            <a
+              className={styles.link}
+              target="_blank"
+              href="https://www.last.fm/api"
+            >
+              Last.fm API
+            </a>{" "}
+            to deliver a clean, responsive experience for discovering music
+            across centuries.
           </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className={`${styles.flexLink}`}
-            href="https://minesweeper-nine-tau.vercel.app/"
-          >
-            <h3 className={styles.projectLink}>Play now</h3>
-            <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
-          </a>
-        </section>
-
-        <img
-          className={styles.minesweeperImg}
-          src={minesweeperImg}
-          alt="Minesweeper"
-        />
-      </section>
-      <div className={styles.line}></div>
-      <section className={styles.cryptoList}>
-        <section className={styles.content}>
-          <div className={styles.flex}>
-            <FaBitcoin color="#6E07F3" size={"2rem"} />
-            <h2 className={styles.cryptoListHeader}>Crypto List</h2>
+          <div className={styles.icons}>
+            <a
+              target="_blank"
+              href="https://github.com/Gor-Hoveyan/radio-time-machine"
+            >
+              <FaGithub />
+            </a>
+            <a target="_blank" href="https://radio-time-machine.vercel.app/">
+              <FaGlobe />
+            </a>
           </div>
-          <p className={styles.text}>
-            A dynamic Front-End application built with React and Redux Toolkit that provides users with up-to-the-minute cryptocurrency information. It seamlessly fetches and displays live data including prices, market caps, and volume from the{" "}
-            <a className={styles.link} 
-             target="_blank"
-             href="https://coincap.io/">
+        </div>{" "}
+        <div className={styles.project}>
+          <img
+            alt="Crypto Tracker"
+            src={firstCryptoImg}
+            className={styles.projectImage}
+          />
+          <h1 className={styles.projectHeader}>Crypto Tracker</h1>
+          <p className={styles.projectDescription}>
+            A dynamic Front-End application built with React and Redux Toolkit
+            that provides users with up-to-the-minute cryptocurrency
+            information. It seamlessly fetches and displays live data including
+            prices, market caps, and volume from the{" "}
+            <a
+              className={styles.link}
+              target="_blank"
+              href="https://coincap.io/"
+            >
               CoinCap API
             </a>
             , offering a clear overview of the crypto market.
           </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            className={`${styles.flexLink}`}
-            href="https://crypto-list-fawn.vercel.app"
-          >
-            <h3 className={styles.projectLink}>View project</h3>
-            <RiExternalLinkFill color="#6E07F3" size={"2rem"} />
-          </a>
-        </section>
-
-        <img
-          style={{ borderTopRightRadius: "3%", borderTopLeftRadius: "3%" }}
-          className={styles.cryptoListImg}
-          src={firstCryptoImg}
-          alt="crypto list"
-        />
-        <br />
-        <img
-          style={{
-            borderBottomRightRadius: "3%",
-            borderBottomLeftRadius: "3%",
-          }}
-          className={styles.cryptoListImg}
-          src={secondCryptoImg}
-          alt="crypto list"
-        />
-      </section>
+          <div className={styles.icons}>
+            <a
+              target="_blank"
+              href="https://github.com/Gor-Hoveyan/crypto-list"
+            >
+              <FaGithub />
+            </a>
+            <a target="_blank" href="https://crypto-list-fawn.vercel.app/">
+              <FaGlobe />
+            </a>
+          </div>
+        </div>
+        <div className={styles.project}>
+          <img
+            src={minesweeperImg}
+            alt="Minesweeper"
+            className={styles.projectImage}
+          />
+          <h1 className={styles.projectHeader}>Minesweeper</h1>
+          <p className={styles.projectDescription}>
+            A faithful recreation on the beloved Minesweeper. Built with React
+            and Tailwind, this project challenges players to use numerical clues
+            to strategically uncover squares and avoid hidden mines on a grid.
+            Features customizable grid sizes for tailored difficulty and game
+            history to track your performance.
+          </p>
+          <div className={styles.icons}>
+            <a
+              target="_blank"
+              href="https://github.com/Gor-Hoveyan/minesweeper"
+            >
+              <FaGithub />
+            </a>
+            <a target="_blank" href="https://minesweeper-nine-tau.vercel.app/">
+              <FaGlobe />
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
   );
-})
+});
 
 export default Works;

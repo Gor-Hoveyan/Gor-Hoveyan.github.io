@@ -88,6 +88,7 @@
   border-radius: calc(var(--border-radius) - var(--border-size));
   color: var(--foreground);
   transition: all 0.3s ease-in-out;
+  font-family: Montserrat-Regular;
 
   &:hover {
     transform: scale(1.05);
@@ -101,7 +102,7 @@
 }
 
 .content {
-  font-weight: 700;
+  font-weight: 900;
   display: flex;
   justify-content: center;
   align-items: center;
