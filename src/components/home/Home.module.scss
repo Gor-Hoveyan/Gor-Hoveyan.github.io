@@ -17,15 +17,22 @@
     font-family: Montserrat-Regular;
   }
 
-  .avatar {
-    margin: 30px 0;
-    transition: transform 0.3s;
-    cursor: url("../../assets/images/pointer.svg"), auto;
-    animation: avatarAnimation 3s linear 1;
-    border-radius: 50%;
-    z-index: 0;
+  .avatarContainer {
+    max-height: fit-content;
+    .avatar {
+      max-width: 100%;
+      margin: 30px 0;
+      transition: transform 0.3s;
+      cursor: url("../../assets/images/pointer.svg"), auto;
+      animation: avatarAnimation 3s linear 1;
+      border-radius: 50%;
+      z-index: 0;
+      transform: rotateY(0deg);
+    }
     &:hover {
-      animation: avatarAnimation 4s linear infinite;
+      .avatar {
+        animation: avatarAnimation 4s linear infinite;
+      }
     }
   }
 
@@ -58,7 +65,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-size: 200% auto;
-  animation: nameAnimation 20s linear infinite;
+  animation: nameAnimation 15s linear infinite;
 }
 
 @keyframes nameAnimation {
@@ -68,12 +75,9 @@
   50% {
     background-position: 100% 50%;
   }
-  0% {
+  100% {
     background-position: 0% 50%;
   }
-}
-
-@keyframes nameAnimation {
 }
 
 @keyframes avatarAnimation {
@@ -97,8 +101,8 @@
   }
 }
 @media (min-width: 1200px) {
-  .avatar {
-    max-width: 15%;
+  .avatarContainer {
+    max-width: 20%;
   }
   .homeHeader {
     font-size: 2.8rem;
@@ -106,7 +110,7 @@
 }
 
 @media (max-width: 1200px) {
-  .avatar {
+  .avatarContainer {
     max-width: 30%;
   }
   .homeHeader {
@@ -115,13 +119,13 @@
 }
 
 @media (max-width: 600px) {
-  .avatar {
+  .avatarContainer {
     max-width: 50%;
   }
 }
 
 @media (max-width: 800px) {
-  .avatar {
+  .avatarContainer {
     max-width: 50%;
   }
   .btn {

@@ -18,7 +18,9 @@ export default function Home({ onContactClick }) {
           product.
         </p>
       </section>
-      <img className={styles.avatar} alt="avatar" src={avatar} />
+      <div className={styles.avatarContainer}>
+        <img className={styles.avatar} alt="avatar" src={avatar} />
+      </div>
       <MainButton onContactClick={onContactClick} />
       <BackgroundSvg
         className={styles.background}
