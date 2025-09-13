@@ -2,7 +2,7 @@ import styles from "./App.module.scss";
 import About from "./components/about/About";
 import Home from "./components/home/Home";
 import { lazy, useRef } from "react";
-import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
+import ScrollToTop from "./components/scrollToTop/ScrollToTop";
 import Header from "./components/header/Header";
 import BurgerMenu from "./components/burgerMenu/BurgerMenu";
 import Skills from "./components/skills/Skills";

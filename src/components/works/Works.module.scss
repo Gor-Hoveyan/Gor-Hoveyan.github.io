@@ -27,92 +27,15 @@
   gap: 30px 0;
 }
 
-.project {
-  max-width: 500px;
-  min-width: 300px;
-  padding: 15px 30px;
-  border-radius: 25px;
-  border: 1.5px solid rgba(80, 80, 80, 0.2);
-  margin: auto 25px;
-  box-shadow: rgba(43, 105, 251, 0.06) 0px 0px 16px 16px;
-  text-align: left;
-  height: 100%;
-
-  .projectHeader {
-    text-align: left;
-    display: inline-block;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    margin-top: 5px;
-  }
-
-  .link {
-    color: #6e07f3;
-    font-weight: 500;
-    text-decoration: none;
-    cursor: url("./../../assets/images/pointer.svg"), auto;
-  }
-
-  .projectImage {
-    height: 200px;
-    width: 100%;
-    object-fit: cover;
-    object-position: top;
-    border-radius: 15px;
-
-    /* Mask to blur only the bottom */
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      black 50%,
-      black 50%,
-      transparent 100%
-    );
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: cover;
-    -webkit-mask-composite: destination-in;
-
-    mask-image: linear-gradient(
-      to bottom,
-      black 50%,
-      black 50%,
-      transparent 100%
-    );
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: cover;
-    mask-composite: intersect;
-
-    cursor: url("./../../assets/images/pointer.svg"), auto;
-    transition: 0.3s ease;
-
-    &:hover {
-      transform: scale(1.1);
-    }
-  }
-
-  .icons {
-    font-size: 30px;
-    margin-top: 15px;
-    color: black;
-    a {
-      margin-right: 15px;
-      cursor: url("./../../assets/images/pointer.svg"), auto;
-      color: black;
-
-      svg,
-      path {
-        cursor: url("./../../assets/images/pointer.svg"), auto;
-      }
-    }
-  }
+.link {
+  color: #6e07f3;
+  font-weight: 500;
+  text-decoration: none;
+  cursor: url("./../../assets/images/pointer.svg"), auto;
 }
 
 @media (max-width: 800px) {
   .grid {
     grid-template-columns: 100%;
-  }
-  .project {
-    height: fit-content;
   }
 }
