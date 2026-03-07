@@ -9,7 +9,6 @@
     font-size: 2.2rem;
     text-align: center;
     margin-bottom: 30px;
-    font-family: Montserrat-Regular;
   }
 }
 
@@ -36,46 +35,27 @@
   text-align: center;
   font-weight: 500;
   color: #333;
-  cursor: url("../../assets/images/pointer.svg"), auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  transition: all 0.4s ease;
 
   .icon {
     font-size: 2.5rem;
-    color: #4c1d95;
     margin-bottom: 12px;
-    transition: transform 0.3s ease, color 0.3s ease;
+    transition: all 0.4s ease;
   }
 
   &:hover {
     transform: translateY(-10px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-    background: linear-gradient(
-      135deg,
-      rgba(240, 248, 255, 0.7),
-      rgba(220, 240, 255, 0.7)
-    );
-
-    .icon {
-      color: #7f5af0;
-      cursor: url("../../assets/images/pointer.svg"), auto;
-    }
-
-    .skillTitle {
-      cursor: url("../../assets/images/pointer.svg"), auto;
-    }
+    box-shadow: 0 8px 8px 8px rgba(255, 255, 255, 0.2);
   }
-}
-
-.skillItem:hover .skillTitle {
-  color: #4c1d95;
 }
 
 @media (max-width: 800px) {
   .skillItem {
+    transition: all 0.4s ease;
     &:hover {
       transform: none;
       box-shadow: none;
@@ -86,7 +66,7 @@
         font-size: 2.5rem;
         color: #4c1d95;
         margin-bottom: 12px;
-        transition: transform 0.3s ease, color 0.3s ease;
+        transition: all 0.4s ease;
       }
       .skillTitle {
         color: #333;

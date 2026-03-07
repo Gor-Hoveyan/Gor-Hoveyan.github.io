@@ -10,7 +10,7 @@ export default function Home({ onContactClick }) {
       <section className={styles.contentDiv}>
         <h1 className={styles.homeHeader}>
           HEY, I'M <br className={styles.headerBreak} />
-          <span className={styles.name}>GOR HOVEYAN</span>.
+          <span className={styles.name}>GOR HOVEYAN</span>
         </h1>
         <p className={styles.content}>
           A Front-End focused software engineer specializing in building{" "}

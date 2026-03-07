@@ -26,7 +26,7 @@ const Contact = forwardRef((props, ref) => {
             href="https://www.linkedin.com/in/gorhoveyan/"
           >
             <ImLinkedin
-              onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
+              onMouseOver={(e) => (e.currentTarget.style.scale = "1.1")}
               onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
               style={{
                 transitionDuration: "0.4s",
@@ -44,7 +44,7 @@ const Contact = forwardRef((props, ref) => {
             href="https://t.me/gorhoveyan"
           >
             <FaTelegram
-              onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
+              onMouseOver={(e) => (e.currentTarget.style.scale = "1.1")}
               onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
               style={{
                 transitionDuration: "0.4s",
@@ -62,7 +62,7 @@ const Contact = forwardRef((props, ref) => {
             href="https://github.com/Gor-Hoveyan"
           >
             <FaGithub
-              onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
+              onMouseOver={(e) => (e.currentTarget.style.scale = "1.1")}
               onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
               style={{
                 transitionDuration: "0.4s",
@@ -80,7 +80,7 @@ const Contact = forwardRef((props, ref) => {
             href="mailto:gorhoveyan@bk.ru"
           >
             <ImMail4
-              onMouseOver={(e) => (e.currentTarget.style.scale = "1.2")}
+              onMouseOver={(e) => (e.currentTarget.style.scale = "1.1")}
               onMouseLeave={(e) => (e.currentTarget.style.scale = "1")}
               style={{
                 transitionDuration: "0.4s",

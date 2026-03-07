@@ -14,7 +14,6 @@
     transition: transform 0.3s;
     width: fit-content;
     margin: 20px auto 20px auto;
-    font-family: Montserrat-Regular;
   }
 
   .avatarContainer {
@@ -23,16 +22,10 @@
       max-width: 100%;
       margin: 30px 0;
       transition: transform 0.3s;
-      cursor: url("../../assets/images/pointer.svg"), auto;
-      animation: avatarAnimation 3s linear 1;
       border-radius: 50%;
       z-index: 0;
       transform: rotateY(0deg);
-    }
-    &:hover {
-      .avatar {
-        animation: avatarAnimation 4s linear infinite;
-      }
+      animation: avatarAnimation 8s linear infinite;
     }
   }
 
