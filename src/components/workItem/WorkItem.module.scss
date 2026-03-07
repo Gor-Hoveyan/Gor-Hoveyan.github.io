@@ -55,25 +55,34 @@
     mask-composite: intersect;
 
     cursor: url("./../../assets/images/pointer.svg"), auto;
-    transition: 0.3s ease;
+    transition: 0.4s ease;
 
     &:hover {
-      transform: scale(1.1);
+      transform: scale(1.05);
     }
   }
 
   .icons {
     font-size: 30px;
     margin-top: 15px;
-    color: black;
+
     a {
       margin-right: 15px;
       cursor: url("./../../assets/images/pointer.svg"), auto;
       color: black;
+      transition: all 0.3s ease;
+
+      &:hover {
+        svg,
+        path {
+          color: #6e07f3;
+        }
+      }
 
       svg,
       path {
         cursor: url("./../../assets/images/pointer.svg"), auto;
+        transition: all 0.3s ease;
       }
     }
   }
