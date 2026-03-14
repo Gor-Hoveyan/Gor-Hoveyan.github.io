@@ -22,6 +22,7 @@ import {
   SiMongodb,
 } from "react-icons/si";
 import { TbApi } from "react-icons/tb";
+import Container from "../container/Container";
 
 const skills = [
   { icon: <FaHtml5 size={30} />, name: "HTML" },
@@ -48,15 +49,17 @@ const Skills = forwardRef((props, ref) => {
   return (
     <>
       <section className={styles.skills} ref={ref}>
-        <h1 className={styles.header}>Skills</h1>
-        <div className={styles.skillGrid}>
-          {skills.map((skill) => (
-            <div key={skill.name} className={styles.skillItem}>
-              <div className={styles.icon}>{skill.icon}</div>
-              <div className={styles.skillTitle}>{skill.name}</div>
-            </div>
-          ))}
-        </div>
+        <Container>
+          <h1 className={styles.header}>Skills</h1>
+          <div className={styles.skillGrid}>
+            {skills.map((skill) => (
+              <div key={skill.name} className={styles.skillItem}>
+                <div className={styles.icon}>{skill.icon}</div>
+                <div className={styles.skillTitle}>{skill.name}</div>
+              </div>
+            ))}
+          </div>
+        </Container>
       </section>
       <svg
         className={styles.svgCurve}

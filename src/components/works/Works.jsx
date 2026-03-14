@@ -6,6 +6,7 @@ import radioTimeMachineImg from "./../../assets/images/radioTimeMachine.webp";
 import cryptoImg from "./../../assets/images/crypto1.webp";
 import ViewImage from "../viewImage/ViewImage";
 import WorkItem from "../workItem/WorkItem";
+import Container from "../container/Container";
 
 const projects = [
   {
@@ -89,30 +90,32 @@ const Works = forwardRef((props, ref) => {
   const [viewImage, setViewImage] = useState("");
   return (
     <section className={styles.main} ref={ref}>
-      <h1 className={styles.worksHeader}>Recent Works</h1>
-      <p className={styles.content}>
-        A showcase of projects highlighting creativity and clean code.
-      </p>
-      <div className={styles.grid}>
-        {projects.map((project) => (
-          <WorkItem
-            key={project.name}
-            name={project.name}
-            description={project.description}
-            img={project.img}
-            deploymentUrl={
-              project.deploymentUrl ? project.deploymentUrl : undefined
-            }
-            gitHubUrl={project.gitHubUrl ? project.gitHubUrl : undefined}
-            setViewImage={setViewImage}
-          />
-        ))}
-      </div>
-      {viewImage ? (
-        <ViewImage setViewImage={setViewImage} src={viewImage} />
-      ) : (
-        ""
-      )}
+      <Container>
+        <h1 className={styles.worksHeader}>Recent Works</h1>
+        <p className={styles.content}>
+          A showcase of projects highlighting creativity and clean code.
+        </p>
+        <div className={styles.grid}>
+          {projects.map((project) => (
+            <WorkItem
+              key={project.name}
+              name={project.name}
+              description={project.description}
+              img={project.img}
+              deploymentUrl={
+                project.deploymentUrl ? project.deploymentUrl : undefined
+              }
+              gitHubUrl={project.gitHubUrl ? project.gitHubUrl : undefined}
+              setViewImage={setViewImage}
+            />
+          ))}
+        </div>
+        {viewImage ? (
+          <ViewImage setViewImage={setViewImage} src={viewImage} />
+        ) : (
+          ""
+        )}
+      </Container>
     </section>
   );
 });
