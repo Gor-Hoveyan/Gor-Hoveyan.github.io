@@ -1,20 +1,45 @@
+.projectContainer {
+  transition: transform 0.3s linear;
+  max-width: fit-content;
+  max-height: fit-content;
+
+  &:hover {
+    .project {
+      transform: translateY(-5px);
+    }
+  }
+}
+
 .project {
   max-width: 500px;
   min-width: 300px;
   padding: 15px 30px;
   border-radius: 25px;
-  border: 1.5px solid rgba(80, 80, 80, 0.2);
-  margin: auto 25px;
-  box-shadow: rgba(43, 105, 251, 0.06) 0px 0px 16px 16px;
+  border: 1px solid rgba(161, 160, 160, 0.2);
+  box-shadow: rgba(43, 105, 251, 0.06) 0px 4px 12px;
   text-align: left;
   height: 100%;
+  transition:
+    box-shadow,
+    transform 0.2s linear;
+
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 18px 28px;
+  }
 
   .projectHeader {
     text-align: left;
     display: inline-block;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
-    margin-top: 5px;
+    font-size: 18px;
+    margin: 12px 0;
+    font-weight: 600;
+  }
+
+  .projectDescription a {
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 2px;
+    }
   }
 
   .link {
@@ -24,42 +49,51 @@
     cursor: url("./../../assets/images/pointer.svg"), auto;
   }
 
+  .imageWrapper {
+    height: 200px;
+    width: 100%;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    user-select: none;
+
+    .imageOverlay {
+      visibility: hidden;
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      z-index: 10;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s linear;
+      cursor: zoom-in;
+
+      * {
+        cursor: zoom-in;
+      }
+    }
+
+    &:hover {
+      .imageOverlay {
+        background-color: rgba(0, 0, 0, 0.5);
+        visibility: visible;
+      }
+
+      .projectImage {
+        transform: scale(1.05);
+      }
+    }
+  }
+
   .projectImage {
     height: 200px;
     width: 100%;
     object-fit: cover;
     object-position: top;
-    border-radius: 15px;
-
-    /* Mask to blur only the bottom */
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      black 50%,
-      black 50%,
-      transparent 100%
-    );
-    -webkit-mask-repeat: no-repeat;
-    -webkit-mask-position: center;
-    -webkit-mask-size: cover;
-    -webkit-mask-composite: destination-in;
-
-    mask-image: linear-gradient(
-      to bottom,
-      black 50%,
-      black 50%,
-      transparent 100%
-    );
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: cover;
-    mask-composite: intersect;
+    transition: all 0.3s linear;
 
     cursor: url("./../../assets/images/pointer.svg"), auto;
-    transition: 0.4s ease;
-
-    &:hover {
-      transform: scale(1.05);
-    }
   }
 
   .icons {

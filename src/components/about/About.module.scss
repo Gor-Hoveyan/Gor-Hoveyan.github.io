@@ -1,6 +1,6 @@
 .about {
   background-color: #6e07f3;
-  padding: 75px 5% 0px 5%;
+  padding: 75px 0px 0px 0px;
   margin: 0;
   color: white;
 
@@ -10,8 +10,8 @@
   }
 
   .content {
-    max-width: 800px;
     margin: 40px auto 0 auto;
+    text-align: center;
     font-size: 1.1rem;
     transition: 0.4s;
     transform: translateY(100);
